@@ -1,0 +1,10 @@
+:root {
+	--font-family: "DM Sans", Inter, system-ui, Avenir, Helvetica, Arial,sans-serif;
+	--color-background: #242424;
+	--color-white: #fff;
+	--color-blue: #6ac0fd;
+	--color-indigo: #131947;
+	--color-purple: #868ba9;
+	--color-grey-200: #e6e6e6;
+	--color-grey-100: #f2f2f2;
+}

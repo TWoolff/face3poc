@@ -1,0 +1,38 @@
+.claims {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.claim {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-white);
+    border-radius: 1rem;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border: none;
+    text-align: left;
+
+    & svg {
+        align-self: center;
+    }
+}
+
+.claimInfo {
+    max-width: 14rem;
+
+    & h2 {
+        font-size: 1.25rem;
+        line-height: 1.3;
+        color: var(--color-indigo);
+        margin: 0 0 0.3rem 0;
+    }
+
+    & p {
+        font-size: 0.875rem;
+        color: var(--color-purple);
+        line-height: 1.1;
+        margin: 0;
+    }
+}

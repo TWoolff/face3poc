@@ -1,0 +1,32 @@
+<svg
+    className='spinner'
+    data-id="spinner"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    preserveAspectRatio="xMidYMid meet"
+    viewBox="0 0 24 24"
+    focusable="false"
+    aria-hidden="true"
+    role="img"
+    fill="none"
+    stroke="none"
+  >
+    <path
+      d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM4.5 12C4.5 16.1421 7.85786 19.5 12 19.5C16.1421 19.5 19.5 16.1421 19.5 12C19.5 7.85786 16.1421 4.5 12 4.5C7.85786 4.5 4.5 7.85786 4.5 12Z"
+      fill="currentColor"
+      fillOpacity="0.1"
+      stroke="none"
+    />
+    <path
+      className="gradient"
+      d="M12 3.25C12 2.55964 12.5618 1.99195 13.2468 2.07802C14.1316 2.18921 14.9995 2.4185 15.8268 2.7612C17.0401 3.26375 18.1425 4.00035 19.0711 4.92893C19.9997 5.85752 20.7362 6.95991 21.2388 8.17317C21.5815 9.00053 21.8108 9.86841 21.922 10.7532C22.008 11.4382 21.4404 12 20.75 12C20.0596 12 19.5106 11.4366 19.3961 10.7558C19.3024 10.1992 19.1461 9.65373 18.9291 9.12987C18.5522 8.21993 17.9997 7.39314 17.3033 6.6967C16.6069 6.00026 15.7801 5.44781 14.8701 5.0709C14.3463 4.85392 13.8008 4.69755 13.2442 4.60393C12.5634 4.4894 12 3.94035 12 3.25Z"
+      fill="#000000"
+      stroke="none"
+    />
+    <defs>
+      <linearGradient id="loadergradient" x1="12" y1="2" x2="22" y2="12" gradientUnits="userSpaceOnUse">
+        <stop offset="0.322917" stopColor="currentColor" stopOpacity="0" />
+        <stop offset="1" stopColor="currentColor" />
+      </linearGradient>
+    </defs>
+  </svg>

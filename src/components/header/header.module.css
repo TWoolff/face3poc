@@ -1,0 +1,14 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem 1.5rem;
+	align-items: center;
+}
+
+.rightFlex {
+	display: flex;
+	height: 2.4rem;
+	width: 4.3rem;
+	justify-content: space-between;
+	align-items: flex-end;
+}

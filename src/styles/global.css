@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap');
+
+html,
+body {
+	-ms-overflow-style: scrollbar;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	font-family: var(--font-family);
+	font-size: 16px;
+	background-color: var(--color-grey-100);
+	color: var(--color-indigo);
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	word-wrap: break-word;
+	box-sizing: border-box;
+}
+
+body::-webkit-scrollbar{
+	display: none;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+main {
+	width: 100vw;
+	padding: 1rem;
+}
