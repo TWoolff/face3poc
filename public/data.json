@@ -251,7 +251,19 @@
     "id": 7,
     "cat": "Cykel",
     "title": "Cykel",
-    "description": "Tyveri eller skade"
+    "description": "Tyveri eller skade",
+    "keywords": [
+      "cykel",
+      "cyklen",
+      "cykler",
+      "cyklerne",
+      "tyveri",
+      "skade",
+      "skadet",
+      "skader",
+      "skadede",
+      "stjålet"
+    ]
   },
   {
     "id": 8,

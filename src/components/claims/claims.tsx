@@ -20,19 +20,19 @@ const Claims = () => {
 	const [filteredData, setFilteredData] = useState<IData[]>(data)
 
 	useEffect(() => {
-		if (query && query.includes(' ')) {
+		if (query) {
 			const words = query.toLowerCase().split(' ')
 			const filteredWords = words.filter((word) => {
 				return data.some((item) => {
 					return item.keywords?.some((keyword) => {
-						return keyword.toLowerCase().includes(word)
+						return keyword.toLowerCase() === word
 					})
 				})
 			})
 			const filteredData = data.filter((item) => {
 				return filteredWords.every((word) => {
 					return item.keywords?.some((keyword) => {
-						return keyword.toLowerCase().includes(word)
+						return keyword.toLowerCase() === word
 					})
 				})
 			})
