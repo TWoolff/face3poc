@@ -27,8 +27,8 @@ const DataContext = createContext<IAppState>({
 	keywords: [],
 	query: '',
 	isLoading: false,
-	setQuery: () => { },
-	setIsLoading: () => { },
+	setQuery: () => {},
+	setIsLoading: () => {},
 })
 
 const App = () => {
