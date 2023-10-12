@@ -18,6 +18,7 @@
       "holdende",
       "holder",
       "skade",
+      "skadet",
       "karrosseri",
       "ridse",
       "ridser",
@@ -159,7 +160,8 @@
       "mortorcykel",
       "campingvogn",
       "rude",
-      "ruden"
+      "ruden",
+      "campingvogns"
     ]
   },
   {
@@ -186,6 +188,7 @@
     "description": "Tyveri eller skade",
     "keywords": [
       "campingvogn",
+      "campingvogns",
       "tyveri",
       "skade",
       "lejlighed",

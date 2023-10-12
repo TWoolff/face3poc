@@ -10,30 +10,30 @@ type IData = {
 	title: string,
 	description: string
 	keywords: string[],
-	text?: string
+	query?: string
 }
 
 type IAppState = {
 	data: IData[],
 	keywords: string[],
-	text: string,
+	query: string,
 	isLoading: boolean,
-	setText: React.Dispatch<React.SetStateAction<string>>,
+	setQuery: React.Dispatch<React.SetStateAction<string>>,
 	setIsLoading: React.Dispatch<React.SetStateAction<boolean>>
 }
 
 const DataContext = createContext<IAppState>({
 	data: [],
 	keywords: [],
-	text: '',
+	query: '',
 	isLoading: false,
-	setText: () => { },
+	setQuery: () => { },
 	setIsLoading: () => { },
 })
 
 const App = () => {
 	const [data, setData] = useState<IData[]>([])
-	const [text, setText] = useState<string>('')
+	const [query, setQuery] = useState<string>('')
 	const [isLoading, setIsLoading] = useState<boolean>(false)
 
 	useEffect(() => {
@@ -49,10 +49,10 @@ const App = () => {
 
 	const appState: IAppState = {
 		data,
-		text,
+		query,
 		isLoading,
 		keywords: [],
-		setText,
+		setQuery,
 		setIsLoading,
 	}
 

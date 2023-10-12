@@ -16,27 +16,36 @@ const Claim = ({ title, description }: IData) => {
 }
 
 const Claims = () => {
-	const { data, text, keywords } = useContext<IAppState>(DataContext)
+	const { data, query, keywords } = useContext<IAppState>(DataContext)
 	const [filteredData, setFilteredData] = useState<IData[]>(data)
 
 	useEffect(() => {
-		if (text && text.includes(' ')) {
-			const words = text.toLowerCase().split(' ')
-			const filtered = data.filter((item) => {
-				return item.keywords?.some((keyword) => {
-					return words.includes(keyword.toLowerCase())
+		if (query && query.includes(' ')) {
+			const words = query.toLowerCase().split(' ')
+			const filteredWords = words.filter((word) => {
+				return data.some((item) => {
+					return item.keywords?.some((keyword) => {
+						return keyword.toLowerCase().includes(word)
+					})
 				})
 			})
-			setFilteredData(filtered)
+			const filteredData = data.filter((item) => {
+				return filteredWords.every((word) => {
+					return item.keywords?.some((keyword) => {
+						return keyword.toLowerCase().includes(word)
+					})
+				})
+			})
+			setFilteredData(filteredData)
 		} else {
 			setFilteredData(data)
 		}
-	}, [data, text])
+	}, [data, query])
 
 	return (
 		<section className={css.claims}>
 			{filteredData.map(({ id, title, description, cat }: IData) => {
-				return <Claim {...{ id, title, description, cat, text, keywords }} key={id} />
+				return <Claim {...{ id, title, description, cat, query, keywords }} key={id} />
 			})}
 		</section>
 	)
