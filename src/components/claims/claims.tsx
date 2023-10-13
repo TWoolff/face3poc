@@ -53,9 +53,7 @@ const Claims = () => {
 				})
 			})
 			setFilteredData(filteredData)
-		} else {
-			setFilteredData(data)
-		}
+		} else { setFilteredData(data) }
 	}, [data, query])
 
 	return (
