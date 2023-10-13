@@ -7,10 +7,17 @@ import { Input } from './input/input'
 type IData = {
 	id: number,
 	cat: string,
+	subcat: {
+		id: number,
+        title: string,
+        description: string,
+        keywords: string[]
+	},
 	title: string,
-	description: string
 	keywords: string[],
-	query?: string
+	description?: string
+	query?: string,
+	className?: string
 }
 
 type IAppState = {

@@ -162,6 +162,101 @@
       "rude",
       "ruden",
       "campingvogns"
+    ],
+    "subcat": [
+      {
+        "id": 1,
+        "title": "Bil",
+        "description": "Skade på bil",
+        "keywords": [
+          "bil",
+          "bilen",
+          "køretøj",
+          "parkering",
+          "parkeret",
+          "parkeringsområdet",
+          "parkeringsplads",
+          "parkeringspladsen",
+          "holdt",
+          "holde",
+          "holdende",
+          "holder",
+          "skade",
+          "skadet",
+          "karrosseri",
+          "ridse",
+          "ridser",
+          "bule",
+          "buler",
+          "lygte",
+          "skærm",
+          "bøjet",
+          "bagenden",
+          "kofanger",
+          "kofangeren",
+          "lyskryds",
+          "lyskrydset",
+          "trafiklys",
+          "trafiklyset",
+          "lysregulering",
+          "trafikregulering",
+          "trafikreguleringen",
+          "påkørt",
+          "påkørsel",
+          "bag",
+          "bagfra",
+          "sammenstød",
+          "uheld",
+          "kollision",
+          "kolliderer",
+          "bagskærm",
+          "bagparti",
+          "baglygte",
+          "bagrude",
+          "trafik",
+          "siden",
+          "forfra",
+          "bane",
+          "ramt",
+          "forvoldt"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Motorcykel",
+        "description": "Skade på MC, knallert eller camping-/påhængsvogn",
+        "keywords": [
+          "motorcykel",
+          "motorcyklen",
+          "køretøj",
+          "parkering",
+          "parkeret",
+          "parkeringsområdet",
+          "parkeringsplads",
+          "parkeringspladsen",
+          "holdt",
+          "holde",
+          "holdende",
+          "holder",
+          "skade",
+          "skadet",
+          "karrosseri",
+          "ridse",
+          "ridser",
+          "bule",
+          "buler",
+          "lygte",
+          "skærm"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Andet",
+        "description": "Andet",
+        "keywords": [
+          "andet"
+        ]
+      }
     ]
   },
   {
@@ -179,6 +274,16 @@
       "tand",
       "tænder",
       "tandskade"
+    ],
+    "subcat": [
+      {
+        "id": 3,
+        "title": "Andet",
+        "description": "Andet",
+        "keywords": [
+          "andet"
+        ]
+      }
     ]
   },
   {
@@ -202,6 +307,16 @@
       "lejligheden",
       "lejlighedens",
       "lejlighed"
+    ],
+    "subcat": [
+      {
+        "id": 3,
+        "title": "Andet",
+        "description": "Andet",
+        "keywords": [
+          "andet"
+        ]
+      }
     ]
   },
   {
@@ -233,19 +348,73 @@
       "kattene",
       "hunden",
       "hundene"
+    ],
+    "subcat": [
+      {
+        "id": 3,
+        "title": "Andet",
+        "description": "Andet",
+        "keywords": [
+          "andet"
+        ]
+      }
     ]
   },
   {
     "id": 5,
     "cat": "Rejse",
     "title": "Rejse",
-    "description": "Sygdom på rejse, afbestilling"
+    "description": "Sygdom på rejse, afbestilling",
+    "keywords": [
+      "rejse",
+      "sygdom",
+      "afbestilling"
+    ],
+    "subcat": [
+      {
+        "id": 3,
+        "title": "Andet",
+        "description": "Andet",
+        "keywords": [
+          "andet"
+        ]
+      }
+    ]
   },
   {
     "id": 6,
     "cat": "Bygning",
     "title": "Bygning",
-    "description": "Skade på hus, tag eller bygning"
+    "description": "Skade på hus, tag eller bygning",
+    "keywords": [
+      "hus",
+      "huset",
+      "huse",
+      "hjem",
+      "hjemmet",
+      "bolig",
+      "boligen",
+      "lejlighed",
+      "lejligheden",
+      "lejlighedens",
+      "lejlighed",
+      "bygning",
+      "bygningen",
+      "bygningens",
+      "bygninger",
+      "bygningerne",
+      "skade"
+    ],
+    "subcat": [
+      {
+        "id": 3,
+        "title": "Andet",
+        "description": "Andet",
+        "keywords": [
+          "andet"
+        ]
+      }
+    ]
   },
   {
     "id": 7,
@@ -263,6 +432,16 @@
       "skader",
       "skadede",
       "stjålet"
+    ],
+    "subcat": [
+      {
+        "id": 3,
+        "title": "Andet",
+        "description": "Andet",
+        "keywords": [
+          "andet"
+        ]
+      }
     ]
   },
   {
