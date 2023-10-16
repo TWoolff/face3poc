@@ -28,4 +28,8 @@ body::-webkit-scrollbar{
 main {
 	width: 100vw;
 	padding: 1rem;
+
+	@media (min-width: 1000px) {
+		padding: 1rem 8.5rem;
+	}
 }

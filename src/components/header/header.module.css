@@ -3,6 +3,10 @@ header {
 	justify-content: space-between;
 	padding: 2rem 1.5rem;
 	align-items: center;
+
+	@media (min-width: 1000px) {
+		padding: 2rem 8.75rem;
+	}
 }
 
 .rightFlex {

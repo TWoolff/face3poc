@@ -4,21 +4,14 @@ import { Hero } from './hero/hero'
 import { Claims } from './claims/claims'
 import { Input } from './input/input'
 
-type IData = {
-	id: number,
-	cat: string,
-	subcat: {
-		id: number,
-        title: string,
-        description: string,
-        keywords: string[]
-	},
-	title: string,
-	keywords: string[],
-	description?: string
-	query?: string,
-	className?: string
-}
+interface IData {
+	id: number
+	title: string
+	description: string
+	keywords: string[]
+	subcat?: (IData & { subcat?: IData[] })[]
+	[key: string]: any
+  }
 
 type IAppState = {
 	data: IData[],
