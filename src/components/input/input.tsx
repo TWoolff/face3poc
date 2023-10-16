@@ -8,7 +8,9 @@ const Input = () => {
 	const handleFocus = () => {setPlaceholder('')}
 
 	return (
-		<input type='text' className={css.inputField} onChange={(e) => setQuery(e.target.value)} placeholder={placeholder} onFocus={handleFocus} />
+		<div className={css.inputField}>
+			<input type='text' onChange={(e) => setQuery(e.target.value)} placeholder={placeholder} onFocus={handleFocus} />
+		</div>
 	)
 }
 
