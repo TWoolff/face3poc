@@ -6,147 +6,15 @@
 		"description": "Bil, motorcykel, knallert, campingvogn",
 		"keywords": [
 			"bil",
-			"bilen",
-			"køretøj",
-			"parkering",
-			"parkeret",
-			"parkeringsområdet",
-			"parkeringsplads",
-			"parkeringspladsen",
-			"holdt",
-			"holde",
-			"holdende",
-			"holder",
 			"skade",
-			"skadet",
-			"karrosseri",
-			"ridse",
-			"ridser",
-			"bule",
-			"buler",
-			"lygte",
-			"skærm",
-			"bøjet",
-			"bagenden",
-			"kofanger",
-			"kofangeren",
-			"lyskryds",
-			"lyskrydset",
-			"trafiklys",
-			"trafiklyset",
-			"lysregulering",
-			"trafikregulering",
-			"trafikreguleringen",
-			"påkørt",
-			"påkørsel",
-			"bag",
-			"bagfra",
-			"sammenstød",
-			"uheld",
-			"kollision",
-			"kolliderer",
-			"bagskærm",
-			"bagparti",
-			"baglygte",
-			"bagrude",
-			"trafik",
-			"siden",
-			"forfra",
-			"bane",
-			"ramt",
-			"forvoldt",
-			"bolig",
-			"hjem",
-			"villa",
-			"bygning",
-			"bygningsværk",
-			"hus",
-			"konstruktion",
-			"etablissement",
-			"opførelse",
-			"struktur",
-			"facilitet",
-			"anlæg",
-			"kontor",
-			"fabrik",
-			"lager",
-			"kirke",
-			"skole",
-			"gård",
-			"rådhus",
-			"mølle",
-			"hospital",
-			"biograf",
-			"bibliotek",
-			"supermarked",
-			"marked",
-			"center",
-			"garage",
-			"restaurant",
-			"cafe",
-			"hotel",
-			"kompleks",
-			"kegle",
-			"ting",
-			"genstand",
-			"træ",
-			"træstub",
-			"stolpe",
-			"mur",
-			"hegn",
-			"skilt",
-			"cykel",
-			"lys",
-			"busk",
-			"sten",
-			"parkerede",
-			"spejl",
-			"bakspejl",
-			"væg",
-			"skraldespand",
-			"cykelstativ",
-			"dør",
-			"trappe",
-			"bro",
-			"container",
-			"port",
-			"brandhane",
-			"kantsten",
-			"værn",
-			"affald",
-			"spand",
-			"postkasse",
-			"lampe",
-			"gadelampe",
-			"bom",
-			"vej",
-			"afspærring",
-			"beton",
-			"klods",
-			"bænk",
-			"hæk",
-			"dyr",
-			"rådyr",
-			"dådyr",
-			"kronhjort",
-			"vildt",
-			"hare",
-			"ræv",
-			"hjort",
-			"fasan",
-			"gris",
-			"hest",
-			"hund",
-			"mår",
-			"fugl",
-			"grævling",
-			"pindsvin",
-			"muldvarp",
-			"kanin",
-			"egern",
-			"krage",
-			"måge",
 			"glas",
+			"påkørsel",
+			"påkørt",
+			"køretøj",
+			"person",
+			"dyr",
+			"ting",
+			"andet",
 			"rude",
 			"vindue",
 			"forrude",
@@ -155,14 +23,7 @@
 			"sidespejl",
 			"sidespejle",
 			"sidespejlet",
-			"sidespejlene",
-			"knallert",
-			"mortorcykel",
-			"campingvogn",
-			"rude",
-			"ruden",
-			"campingvogns",
-			"kat"
+			"sidespejlene"
 		],
 		"subcat": [
 			{
@@ -170,64 +31,32 @@
 				"title": "Skade på bil",
 				"description": "Skade på bil",
 				"keywords": [
-					"bil",
-					"bilen",
-					"køretøj",
-					"parkering",
-					"parkeret",
-					"parkeringsområdet",
-					"parkeringsplads",
-					"parkeringspladsen",
-					"holdt",
-					"holde",
-					"holdende",
-					"holder",
 					"skade",
-					"skadet",
-					"karrosseri",
-					"ridse",
-					"ridser",
-					"bule",
-					"buler",
-					"lygte",
-					"skærm",
-					"bøjet",
-					"bagenden",
-					"kofanger",
-					"kofangeren",
-					"lyskryds",
-					"lyskrydset",
-					"trafiklys",
-					"trafiklyset",
-					"lysregulering",
-					"trafikregulering",
-					"trafikreguleringen",
-					"påkørt",
+					"glas",
 					"påkørsel",
-					"bag",
-					"bagfra",
-					"sammenstød",
-					"uheld",
-					"kollision",
-					"kolliderer",
-					"bagskærm",
-					"bagparti",
-					"baglygte",
+					"påkørt",
+					"køretøj",
+					"person",
+					"dyr",
+					"ting",
+					"andet",
+					"glas",
+					"rude",
+					"vindue",
+					"forrude",
 					"bagrude",
-					"trafik",
-					"siden",
-					"forfra",
-					"bane",
-					"ramt",
-					"forvoldt"
+					"siderude",
+					"sidespejl",
+					"sidespejle",
+					"sidespejlet",
+					"sidespejlene"
 				],
 				"subcat": [
 					{
 						"id": 3,
-						"title": "Glasskade - Bil",
-						"description": "Glasskade Bil",
+						"title": "Glasskade",
+						"description": "Glasskade",
 						"keywords": [
-							"bil",
 							"glas",
 							"rude",
 							"vindue",
@@ -245,25 +74,13 @@
 						"title": "Påkørsel i trafikken",
 						"description": "Påkørsel i trafikken",
 						"keywords": [
-							"bil",
-							"påkørt",
 							"påkørsel",
-							"bag",
-							"bagfra",
-							"sammenstød",
-							"uheld",
-							"kollision",
-							"kolliderer",
-							"bagskærm",
-							"bagparti",
-							"baglygte",
-							"bagrude",
-							"trafik",
-							"siden",
-							"forfra",
-							"bane",
-							"ramt",
-							"forvoldt"
+							"påkørt",
+							"køretøj",
+							"person",
+							"dyr",
+							"ting",
+							"andet"
 						],
 						"subcat": [
 							{
@@ -271,25 +88,7 @@
 								"title": "Jeg er blevet påkørt",
 								"description": "Jeg er blevet påkørt",
 								"keywords": [
-									"bil",
-									"påkørt",
-									"påkørsel",
-									"bag",
-									"bagfra",
-									"sammenstød",
-									"uheld",
-									"kollision",
-									"kolliderer",
-									"bagskærm",
-									"bagparti",
-									"baglygte",
-									"bagrude",
-									"trafik",
-									"siden",
-									"forfra",
-									"bane",
-									"ramt",
-									"forvoldt"
+									"påkørt"
 								]
 							},
 							{
@@ -297,25 +96,7 @@
 								"title": "Jeg har ramt et køretøj",
 								"description": "Jeg har ramt et køretøj",
 								"keywords": [
-									"bil",
-									"påkørt",
-									"påkørsel",
-									"bag",
-									"bagfra",
-									"sammenstød",
-									"uheld",
-									"kollision",
-									"kolliderer",
-									"bagskærm",
-									"bagparti",
-									"baglygte",
-									"bagrude",
-									"trafik",
-									"siden",
-									"forfra",
-									"bane",
-									"ramt",
-									"forvoldt"
+									"køretøj"
 								]
 							},
 							{
@@ -323,25 +104,6 @@
 								"title": "Jeg har ramt en person",
 								"description": "Jeg har ramt en person",
 								"keywords": [
-									"bil",
-									"påkørt",
-									"påkørsel",
-									"bag",
-									"bagfra",
-									"sammenstød",
-									"uheld",
-									"kollision",
-									"kolliderer",
-									"bagskærm",
-									"bagparti",
-									"baglygte",
-									"bagrude",
-									"trafik",
-									"siden",
-									"forfra",
-									"bane",
-									"ramt",
-									"forvoldt",
 									"person"
 								]
 							},
@@ -350,25 +112,6 @@
 								"title": "Jeg har ramt et dyr",
 								"description": "Jeg har ramt et dyr",
 								"keywords": [
-									"bil",
-									"påkørt",
-									"påkørsel",
-									"bag",
-									"bagfra",
-									"sammenstød",
-									"uheld",
-									"kollision",
-									"kolliderer",
-									"bagskærm",
-									"bagparti",
-									"baglygte",
-									"bagrude",
-									"trafik",
-									"siden",
-									"forfra",
-									"bane",
-									"ramt",
-									"forvoldt",
 									"dyr"
 								]
 							},
@@ -377,27 +120,6 @@
 								"title": "Jeg har ramt en ting eller bygning",
 								"description": "Jeg har ramt en ting eller bygning",
 								"keywords": [
-									"bil",
-									"påkørt",
-									"påkørsel",
-									"bag",
-									"bagfra",
-									"sammenstød",
-									"uheld",
-									"kollision",
-									"kolliderer",
-									"bagskærm",
-									"bagparti",
-									"baglygte",
-									"bagrude",
-									"trafik",
-									"siden",
-									"forfra",
-									"bane",
-									"ramt",
-									"forvoldt",
-									"hus",
-									"bygning",
 									"ting"
 								]
 							},
@@ -409,111 +131,6 @@
 									"andet"
 								]
 							}
-						]
-					},
-					{
-						"id": 11,
-						"title": "Parkeringsskade",
-						"description": "Parkeringsskade",
-						"keywords": [
-							"bil",
-							"bilen",
-							"køretøj",
-							"parkering",
-							"parkeret",
-							"parkeringsområdet",
-							"parkeringsplads",
-							"parkeringspladsen",
-							"holdt",
-							"holde",
-							"holdende",
-							"holder",
-							"skade",
-							"skadet",
-							"karrosseri",
-							"ridse",
-							"ridser",
-							"bule",
-							"buler",
-							"lygte",
-							"skærm",
-							"bøjet",
-							"bagenden",
-							"kofanger",
-							"kofangeren",
-							"lyskryds",
-							"lyskrydset",
-							"trafiklys",
-							"trafiklyset",
-							"lysregulering",
-							"trafikregulering",
-							"trafikreguleringen"
-						]
-					},
-					{
-						"id": 12,
-						"title": "Vejrskade",
-						"description": "Vejrskade",
-						"keywords": [
-							"bil",
-							"lyn",
-							"lynnedslag"
-						]
-					},
-					{
-						"id": 13,
-						"title": "Hærværk",
-						"description": "Hærværk",
-						"keywords": [
-							"hærværk",
-							"skade",
-							"skadet",
-							"skader",
-							"skadede",
-							"bil",
-							"bilen",
-							"køretøj",
-							"parkering",
-							"parkeret",
-							"parkeringsområdet",
-							"parkeringsplads",
-							"parkeringspladsen",
-							"holdt",
-							"holde",
-							"holdende",
-							"holder",
-							"skade",
-							"skadet",
-							"karrosseri",
-							"ridse",
-							"ridser",
-							"bule",
-							"buler",
-							"lygte",
-							"skærm",
-							"bøjet",
-							"bagenden",
-							"kofanger",
-							"kofangeren"
-						]
-					},
-					{
-						"id": 14,
-						"title": "Tyveri",
-						"description": "Tyveri",
-						"keywords": [
-							"tyveri",
-							"stjålet",
-							"bil"
-						]
-					},
-					{
-						"id": 15,
-						"title": "Andet",
-						"description": "Andet",
-						"keywords": [
-							"andet",
-							"bil"
 						]
 					}
 				]
@@ -550,13 +167,22 @@
 					"påhængsvogn",
 					"campingvogns",
 					"campingvognen",
-					"glas"
+					"glas",
+					"rude",
+					"vindue",
+					"forrude",
+					"bagrude",
+					"siderude",
+					"sidespejl",
+					"sidespejle",
+					"sidespejlet",
+					"sidespejlene"
 				],
 				"subcat": [
 					{
 						"id": 17,
-						"title": "Glasskade - MC",
-						"description": "Glasskade - MC",
+						"title": "Glasskade",
+						"description": "Glasskade",
 						"keywords": [
 							"glas",
 							"rude",
@@ -595,108 +221,8 @@
 				"description": "Andet",
 				"keywords": [
 					"andet"
-				]
-			}
-		]
-	},
-	{
-		"id": 21,
-		"cat": "Ulykke",
-		"title": "Person",
-		"description": "Sygdom eller fysiske skader, tandskade",
-		"keywords": [
-			"sygdom",
-			"syg",
-			"skade",
-			"skadet",
-			"skader",
-			"skadede",
-			"tand",
-			"tænder",
-			"tandskade"
-		],
-		"subcat": [
-			{
-				"id": 22,
-				"title": "Andet",
-				"description": "Andet",
-				"keywords": [
-					"andet"
-				]
-			}
-		]
-	},
-	{
-		"id": 23,
-		"cat": "Indbo",
-		"title": "Ting",
-		"description": "Tyveri eller skade",
-		"keywords": [
-			"campingvogn",
-			"campingvogns",
-			"tyveri",
-			"skade",
-			"lejlighed",
-			"tv",
-			"hus",
-			"huset",
-			"hjem",
-			"hjemmet",
-			"bolig",
-			"boligen",
-			"lejligheden",
-			"lejlighedens",
-			"lejlighed"
-		],
-		"subcat": [
-			{
-				"id": 24,
-				"title": "Andet",
-				"description": "Andet",
-				"keywords": [
-					"andet"
-				]
-			}
-		]
-	},
-	{
-		"id": 25,
-		"cat": "Dyr",
-		"title": "Dyr",
-		"description": "Skadede eller syge kæledyr",
-		"keywords": [
-			"dyr",
-			"kæledyr",
-			"skade",
-			"skadet",
-			"skader",
-			"skadede",
-			"sygdom",
-			"syg",
-			"syge",
-			"sygt",
-			"kat",
-			"hund",
-			"hest",
-			"fugl",
-			"fugle",
-			"fuglen",
-			"fuglene",
-			"hesten",
-			"hestene",
-			"katten",
-			"kattene",
-			"hunden",
-			"hundene"
-		],
-		"subcat": [
-			{
-				"id": 26,
-				"title": "Andet",
-				"description": "Andet",
-				"keywords": [
-					"andet"
-				]
+				],
+				"subcat": []
 			}
 		]
 	},
@@ -716,8 +242,7 @@
 				"title": "Sygdom på rejse",
 				"description": "Sygdom på rejse",
 				"keywords": [
-					"sygdom",
-					"rejse"
+					"sygdom"
 				]
 			},
 			{
@@ -725,8 +250,36 @@
 				"title": "Afbestilling af rejse",
 				"description": "Afbestilling af rejse",
 				"keywords": [
-					"afbestilling",
-					"rejse"
+					"afbestilling"
+				]
+			}
+		]
+	},
+	{
+		"id": 21,
+		"cat": "Ulykke",
+		"title": "Person",
+		"description": "Sygdom eller fysiske skader, tandskade",
+		"keywords": [
+			"sygdom",
+			"syg",
+			"skade",
+			"skadet",
+			"skader",
+			"skadede",
+			"tand",
+			"tænder",
+			"tandskade",
+			"ulykke",
+			"person"
+		],
+		"subcat": [
+			{
+				"id": 22,
+				"title": "Andet",
+				"description": "Andet",
+				"keywords": [
+					"andet"
 				]
 			}
 		]
@@ -785,7 +338,103 @@
 		],
 		"subcat": [
 			{
+				"id": 320,
+				"title": "Tyveri",
+				"description": "Tyveri af cykel",
+				"keywords": [
+					"tyveri",
+					"stjålet"
+				]
+			},
+			{
+				"id": 321,
+				"title": "Skade",
+				"description": "Cykelskade",
+				"keywords": [
+					"skade",
+					"skadet",
+					"skader",
+					"skadede"
+				]
+			},
+			{
 				"id": 32,
+				"title": "Andet",
+				"description": "Andet",
+				"keywords": [
+					"andet"
+				]
+			}
+		]
+	},
+	{
+		"id": 23,
+		"cat": "Indbo",
+		"title": "Ting",
+		"description": "Tyveri eller skade",
+		"keywords": [
+			"campingvogn",
+			"campingvogns",
+			"tyveri",
+			"skade",
+			"lejlighed",
+			"tv",
+			"hus",
+			"huset",
+			"hjem",
+			"hjemmet",
+			"bolig",
+			"boligen",
+			"lejligheden",
+			"lejlighedens",
+			"lejlighed",
+			"ting",
+			"indbo"
+		],
+		"subcat": [
+			{
+				"id": 24,
+				"title": "Andet",
+				"description": "Andet",
+				"keywords": [
+					"andet"
+				]
+			}
+		]
+	},
+	{
+		"id": 25,
+		"cat": "Dyr",
+		"title": "Dyr",
+		"description": "Skadede eller syge kæledyr",
+		"keywords": [
+			"dyr",
+			"kæledyr",
+			"skade",
+			"skadet",
+			"skader",
+			"skadede",
+			"sygdom",
+			"syg",
+			"syge",
+			"sygt",
+			"kat",
+			"hund",
+			"hest",
+			"fugl",
+			"fugle",
+			"fuglen",
+			"fuglene",
+			"hesten",
+			"hestene",
+			"katten",
+			"kattene",
+			"hunden",
+			"hundene"
+		],
+		"subcat": [
+			{
+				"id": 26,
 				"title": "Andet",
 				"description": "Andet",
 				"keywords": [

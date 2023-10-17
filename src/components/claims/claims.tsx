@@ -16,18 +16,35 @@ const Claim = ({ title, description, className }: IData) => {
 	)
 }
 
-const SubClaims = ({ subcat, className }: IData) => {
+const SubClaims = ({ subcat }: IData) => {
+    return (
+        <div className={css.subCat}>
+            {subcat?.map(({ id, title, description }: IData) => {
+                return (
+                    <button className={css.claim} key={id}>
+                        <div className={css.claimInfo}>
+                            <h2>{title}</h2>
+                            {description && <p>{description}</p>}
+                        </div>
+                        <Glyph />
+                    </button>
+                );
+            })}
+        </div>
+    );
+}
+
+const DeepClaim = ({ title, description }: IData) => {
 	return (
-		<>
-			{Array.isArray(subcat) && subcat.map(({ description, id }) => (
-				<button className={className} key={id}>
-					<div className={css.claimInfo}>
-						<h2>{description}</h2>
-					</div>
-					<Glyph />
-				</button>
-			))}
-		</>
+		<div className={css.subCat}>
+			<button className={css.claim}>
+				<div className={css.claimInfo}>
+					<h2>{title}</h2>
+					{description && <p>{description}</p>}
+				</div>
+				<Glyph />
+			</button>
+		</div>
 	)
 }
 
@@ -35,63 +52,106 @@ const Claims = () => {
 	const { data, query, keywords } = useContext<IAppState>(DataContext)
 	const [filteredWords, setFilteredWords] = useState<string[]>([])
 	const [filteredData, setFilteredData] = useState<IData[]>(data)
-	const [activeData, setActiveData] = useState<IData | null>(null)
-
 
 	useEffect(() => {
 		if (query) {
-			const words = query.toLowerCase().split(' ')
+			const words = query.toLowerCase().split(" ");
 			const filteredWords = words.filter((word) => {
 				return data.some((item) => {
-					return item.keywords?.some((keyword) => {
-						return keyword.toLowerCase() === word
-					})
-				})
-			})
+					return (
+						item.keywords?.some((keyword) => {
+							return keyword.toLowerCase() === word;
+						}) ||
+						item.subcat?.some((subcat) => {
+							return subcat.keywords?.some((keyword) => {
+								return keyword.toLowerCase() === word;
+							});
+						})
+					);
+				});
+			});
 
-			setFilteredWords(filteredWords)
+			setFilteredWords(filteredWords);
 
 			const filteredData = data.filter((item) => {
 				return filteredWords.every((word) => {
-					return item.keywords?.some((keyword) => {
-						return keyword.toLowerCase() === word
-					})
-				})
-			})
-			setFilteredData(filteredData)
-		} else { setFilteredData(data) }
-	}, [data, query])
-
-	useEffect(() => {
-		if (filteredData.length === 1) {
-			const activeItem = filteredData[0]
-			const activeSubcat = activeItem.subcat?.[0].subcat?.flatMap((item: IData) => item.subcat || item).filter((item: IData) => {
-				const keywords = item.keywords?.map((keyword) => keyword.toLowerCase())
-				return filteredWords.every((word) => keywords?.some((kw) => kw.includes(word)))
-			})
-			setActiveData({
-				...activeItem,
-				subcat: activeSubcat
-			})
+					return (
+						item.keywords?.some((keyword) => {
+							return keyword.toLowerCase() === word;
+						}) ||
+						item.subcat?.some((subcat) => {
+							return subcat.keywords?.some((keyword) => {
+								return keyword.toLowerCase() === word;
+							});
+						})
+					);
+				});
+			});
+			setFilteredData(filteredData);
 		} else {
-			setActiveData(null)
+			setFilteredData(data);
 		}
-	}, [filteredData, query])
+	}, [data, query]);
 
-	console.log('activeData', activeData)
-	console.log('filteredData', filteredData)
+
+const findDeepestObject = (
+	item: IData,
+	queryWords: string[]
+): IData | null => {
+	let deepestObject: IData | null = null;
+	if (item.subcat) {
+		for (const subcat of item.subcat) {
+			const keywords = subcat.keywords ?? item.keywords;
+			const filteredKeywords = keywords.filter((keyword) =>
+				queryWords.includes(keyword)
+			);
+			if (filteredKeywords.length) {
+				const subcatDeepestObject = findDeepestObject(subcat, queryWords);
+				if (subcatDeepestObject) {
+					deepestObject = subcatDeepestObject;
+				} else {
+					deepestObject = subcat;
+				}
+			} else {
+				const subcatDeepestObject = findDeepestObject(subcat, queryWords);
+				if (subcatDeepestObject) {
+					deepestObject = subcatDeepestObject;
+				}
+			}
+		}
+	} else {
+		const filteredKeywords = item.keywords.filter((keyword) =>
+			queryWords.includes(keyword)
+		);
+		if (filteredKeywords.length === queryWords.length) {
+			deepestObject = item;
+		}
+	}
+	return deepestObject;
+};
+
+let deepestObject: { id: number; title: string; description: string } | null = null;
+
+filteredData.filter((item) => {
+	const deepestObject = findDeepestObject(item, filteredWords);
+	return deepestObject !== null;
+});
+
+
+if (filteredData.length > 0) {
+	const subcat = findDeepestObject(filteredData[0], filteredWords);
+	if (subcat) {
+		deepestObject = subcat;
+	}
+}
 
 	return (
 		<section className={css.claims}>
 		{filteredData.map(({ id, title, description, cat, subcat }: IData) => (
 			<Fragment key={id}>
-				{!activeData && <Claim {...{ id, title, cat, subcat, query, keywords, description }} className={css.claim} />}
-				{activeData?.id === id && (
-					<>
-						<Claim className={`${css.claim} ${css.active}`} id={activeData.id} cat={activeData.cat} title={subcat[0].title} description={subcat[0].description} keywords={activeData.keywords} />
-						<SubClaims className={`${css.claim}`} subcat={activeData.subcat} id={0} cat={activeData.cat} title={activeData.title} description={activeData.description} keywords={activeData.keywords} />
-					</>
-				)}
+				<Claim {...{ id, title, cat, subcat, query, keywords, description }} className={filteredData.length === 1 ? `${css.claim} ${css.active}` : css.claim} />
+				{filteredData.length === 1 && subcat && !deepestObject && <SubClaims subcat={subcat} id={0} title={''} description={''} keywords={[]} /> }
+				{filteredData.length === 1 && deepestObject && <DeepClaim id={deepestObject.id} title={deepestObject.title} description={deepestObject.description} keywords={[]} /> }
 			</Fragment>
 		))}
 		</section>
