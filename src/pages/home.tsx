@@ -5,7 +5,7 @@ import { Input } from '../components/input/input'
 const Home = () => {
     return ( 
         <>
-            <Hero />
+            <Hero title={'Hvad drejer din anmeldelse sig om?'} />
             <Input />
             <Claims />
         </>

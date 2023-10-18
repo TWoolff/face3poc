@@ -4,9 +4,10 @@ import Arrow from '../../assets/images/Arrow.svg?react'
 import Glyph from '../../assets/images/Glyph.svg?react'
 import css from './claims.module.css'
 
-const Claim = ({ title, description, className, linkTo, setQuery }: IData) => {
+const Claim = ({ title, description, className, linkTo, setQuery, filteredWords, setFilteredWords }: IData) => {
 	const handleClick = () => {
 		setQuery(linkTo)
+		setFilteredWords([])
 	};
 
 	return (
@@ -14,6 +15,7 @@ const Claim = ({ title, description, className, linkTo, setQuery }: IData) => {
 			<div className={css.claimInfo}>
 				<h2>{title}</h2>
 				{description && <p>{description}</p>}
+				{filteredWords.length > 0 && <p className={css.keyWords}>Nøgleord: {filteredWords.join(', ')}</p>}
 			</div>
 			<Arrow />
 		</button>
@@ -157,11 +159,13 @@ if (filteredData.length > 0) {
 	}
 }
 
+
+console.log('filwords', filteredWords)
 	return (
 		<section className={css.claims}>
 		{filteredData.map(({ id, title, description, cat, subcat }: IData) => (
 			<Fragment key={id}>
-				<Claim {...{ id, title, cat, subcat, query, keywords, description }} linkTo={filteredData.length === 1 ? '' : cat } setQuery={setQuery} className={filteredData.length === 1 ? `${css.claim} ${css.active}` : css.claim} />
+				<Claim {...{ id, title, cat, subcat, query, keywords, description }} linkTo={filteredData.length === 1 ? '' : cat } setQuery={setQuery} filteredWords={filteredWords} setFilteredWords={setFilteredWords} className={filteredData.length === 1 ? `${css.claim} ${css.active}` : css.claim} />
 				{filteredData.length === 1 && subcat && !deepestObject && <SubClaims subcat={subcat} id={0} title={''} description={''} cat={cat} keywords={[]} linkTo={''} setQuery={setQuery} /> }
 				{filteredData.length === 1 && deepestObject && <DeepClaim id={deepestObject.id} title={deepestObject.title} description={deepestObject.description} keywords={[]} linkTo={'/form'} /> }
 			</Fragment>

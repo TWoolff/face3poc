@@ -1,7 +1,9 @@
+import { Hero } from '../components/hero/hero'
+
 const Form = () => {
     return ( 
         <>
-            <h1>Formular</h1>
+            <Hero title={'Formular'} />
         </>
     )
 }

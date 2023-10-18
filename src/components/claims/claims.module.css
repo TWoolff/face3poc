@@ -119,3 +119,8 @@
         max-width: 15rem;
     }
 }
+
+.keyWords {
+    display: block;
+    padding-top: 1rem;
+}
