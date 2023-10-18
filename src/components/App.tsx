@@ -3,9 +3,6 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import { Header } from './header/header'
 import { Home } from '../pages/home'
 import { Form } from '../pages/form'
-import { Hero } from './hero/hero'
-import { Claims } from './claims/claims'
-import { Input } from './input/input'
 
 interface IData {
 	id: number
