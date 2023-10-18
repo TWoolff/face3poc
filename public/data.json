@@ -23,7 +23,14 @@
 			"sidespejl",
 			"sidespejle",
 			"sidespejlet",
-			"sidespejlene"
+			"sidespejlene",
+			"parkering",
+			"parkeret",
+			"bule",
+			"sidse",
+			"sidespejl",
+			"holdt",
+			"stille"
 		],
 		"subcat": [
 			{
@@ -49,9 +56,30 @@
 					"sidespejl",
 					"sidespejle",
 					"sidespejlet",
-					"sidespejlene"
+					"sidespejlene",
+					"parkering",
+					"parkeret",
+					"bule",
+					"sidse",
+					"sidespejl",
+					"holdt",
+					"stille"
 				],
 				"subcat": [
+					{
+						"id": 93,
+						"title": "Parkeringsskade",
+						"description": "Parkeringsskade",
+						"keywords": [
+							"parkering",
+							"parkeret",
+							"bule",
+							"sidse",
+							"sidespejl",
+							"holdt",
+							"stille"
+						]
+					},
 					{
 						"id": 3,
 						"title": "Glasskade",
@@ -143,15 +171,6 @@
 					"motorcykel",
 					"motorcyklen",
 					"køretøj",
-					"parkering",
-					"parkeret",
-					"parkeringsområdet",
-					"parkeringsplads",
-					"parkeringspladsen",
-					"holdt",
-					"holde",
-					"holdende",
-					"holder",
 					"skade",
 					"skadet",
 					"karrosseri",
@@ -306,9 +325,37 @@
 			"bygningens",
 			"bygninger",
 			"bygningerne",
-			"skade"
+			"skade",
+			"rotte",
+			"kloak",
+			"vandskade",
+			"rørskade",
+			"kogeplade",
+			"komfur",
+			"ovn"
 		],
 		"subcat": [
+			{
+				"id": 433,
+				"title": "Vand eller rørskade",
+				"description": "Vand eller rørskade",
+				"keywords": [
+					"rotte",
+					"kloak",
+					"vandskade",
+					"rørskade"
+				]
+			},
+			{
+				"id": 434,
+				"title": "Skade på bygning",
+				"description": "Skade på bygning",
+				"keywords": [
+					"kogeplade",
+					"komfur",
+					"ovn"
+				]
+			},
 			{
 				"id": 30,
 				"title": "Andet",

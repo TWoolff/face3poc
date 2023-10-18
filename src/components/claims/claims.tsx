@@ -4,9 +4,13 @@ import Arrow from '../../assets/images/Arrow.svg?react'
 import Glyph from '../../assets/images/Glyph.svg?react'
 import css from './claims.module.css'
 
-const Claim = ({ title, description, className }: IData) => {
+const Claim = ({ title, description, className, linkTo, setQuery }: IData) => {
+	const handleClick = () => {
+		setQuery(linkTo)
+	};
+
 	return (
-		<button className={className}>
+		<button className={className} onClick={handleClick}>
 			<div className={css.claimInfo}>
 				<h2>{title}</h2>
 				{description && <p>{description}</p>}
@@ -16,12 +20,16 @@ const Claim = ({ title, description, className }: IData) => {
 	)
 }
 
-const SubClaims = ({ subcat }: IData) => {
+const SubClaims = ({ subcat, setQuery }: IData) => {
+	const handleClick = (title: string) => {
+		setQuery(title)
+	};
+
     return (
         <div className={css.subCat}>
             {subcat?.map(({ id, title, description }: IData) => {
                 return (
-                    <button className={css.claim} key={id}>
+                    <button className={css.claim} key={id} onClick={() => handleClick(title)}>
                         <div className={css.claimInfo}>
                             <h2>{title}</h2>
                             {description && <p>{description}</p>}
@@ -49,7 +57,7 @@ const DeepClaim = ({ title, description }: IData) => {
 }
 
 const Claims = () => {
-	const { data, query, keywords } = useContext<IAppState>(DataContext)
+	const { data, query, setQuery,keywords } = useContext<IAppState>(DataContext)
 	const [filteredWords, setFilteredWords] = useState<string[]>([])
 	const [filteredData, setFilteredData] = useState<IData[]>(data)
 
@@ -149,9 +157,9 @@ if (filteredData.length > 0) {
 		<section className={css.claims}>
 		{filteredData.map(({ id, title, description, cat, subcat }: IData) => (
 			<Fragment key={id}>
-				<Claim {...{ id, title, cat, subcat, query, keywords, description }} className={filteredData.length === 1 ? `${css.claim} ${css.active}` : css.claim} />
-				{filteredData.length === 1 && subcat && !deepestObject && <SubClaims subcat={subcat} id={0} title={''} description={''} keywords={[]} /> }
-				{filteredData.length === 1 && deepestObject && <DeepClaim id={deepestObject.id} title={deepestObject.title} description={deepestObject.description} keywords={[]} /> }
+				<Claim {...{ id, title, cat, subcat, query, keywords, description }} linkTo={filteredData.length === 1 ? '' : cat } setQuery={setQuery} className={filteredData.length === 1 ? `${css.claim} ${css.active}` : css.claim} />
+				{filteredData.length === 1 && subcat && !deepestObject && <SubClaims subcat={subcat} id={0} title={''} description={''} cat={cat} keywords={[]} linkTo={''} setQuery={setQuery} /> }
+				{filteredData.length === 1 && deepestObject && <DeepClaim id={deepestObject.id} title={deepestObject.title} description={deepestObject.description} keywords={[]} linkTo={''} /> }
 			</Fragment>
 		))}
 		</section>
@@ -159,3 +167,7 @@ if (filteredData.length > 0) {
 }
 
 export { Claims }
+
+//TODO: CLICK HANDLER DEEPCLAIM
+//TODO: DYNAMIC DESCRIPTIONS
+//TODO: DESKTOP STYLING

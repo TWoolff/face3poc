@@ -10,8 +10,9 @@ interface IData {
 	description: string
 	keywords: string[]
 	subcat?: (IData & { subcat?: IData[] })[]
+	linkTo?: string
 	[key: string]: any
-  }
+}
 
 type IAppState = {
 	data: IData[],
