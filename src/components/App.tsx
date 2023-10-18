@@ -1,5 +1,8 @@
 import { createContext, useEffect, useState } from 'react'
+import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import { Header } from './header/header'
+import { Home } from '../pages/home'
+import { Form } from '../pages/form'
 import { Hero } from './hero/hero'
 import { Claims } from './claims/claims'
 import { Input } from './input/input'
@@ -59,12 +62,15 @@ const App = () => {
 
 	return (
 		<DataContext.Provider value={ appState }>
-			<Header />
-			<main>
-				<Hero />
-				<Input />
-				<Claims />
-			</main>
+			<BrowserRouter basename='/'> 
+				<Header />
+				<main>
+					<Routes>
+						<Route path="/" element={<Home />} />
+						<Route path="/form" element={<Form />} />
+					</Routes>
+				</main>
+			</BrowserRouter>
 		</DataContext.Provider>
 	)
 }

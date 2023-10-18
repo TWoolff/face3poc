@@ -42,10 +42,14 @@ const SubClaims = ({ subcat, setQuery }: IData) => {
     );
 }
 
-const DeepClaim = ({ title, description }: IData) => {
+const DeepClaim = ({ title, description, linkTo }: IData) => {
+	const handleClick = () => {
+		const url = linkTo || '/'
+		window.location.href = url
+	};
 	return (
-		<div className={css.subCat}>
-			<button className={css.claim}>
+		<div className={css.subCat}> 
+			<button className={css.claim} onClick={handleClick}>
 				<div className={css.claimInfo}>
 					<h2>{title}</h2>
 					{description && <p>{description}</p>}
@@ -159,7 +163,7 @@ if (filteredData.length > 0) {
 			<Fragment key={id}>
 				<Claim {...{ id, title, cat, subcat, query, keywords, description }} linkTo={filteredData.length === 1 ? '' : cat } setQuery={setQuery} className={filteredData.length === 1 ? `${css.claim} ${css.active}` : css.claim} />
 				{filteredData.length === 1 && subcat && !deepestObject && <SubClaims subcat={subcat} id={0} title={''} description={''} cat={cat} keywords={[]} linkTo={''} setQuery={setQuery} /> }
-				{filteredData.length === 1 && deepestObject && <DeepClaim id={deepestObject.id} title={deepestObject.title} description={deepestObject.description} keywords={[]} linkTo={''} /> }
+				{filteredData.length === 1 && deepestObject && <DeepClaim id={deepestObject.id} title={deepestObject.title} description={deepestObject.description} keywords={[]} linkTo={'/form'} /> }
 			</Fragment>
 		))}
 		</section>
