@@ -40,7 +40,7 @@ const App = () => {
 	useEffect(() => {
 		const fetchData = async () => {
 			setIsLoading(true)
-			const response = await fetch('/data.json')
+			const response = await fetch('/dataTEST.json')
 			const jsonData = await response.json()
 			setData(jsonData)
 			setIsLoading(false)

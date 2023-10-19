@@ -30,7 +30,9 @@
 			"sidse",
 			"sidespejl",
 			"holdt",
-			"stille"
+			"stille",
+			"bagfra",
+			"ramt"
 		],
 		"subcat": [
 			{
@@ -63,7 +65,11 @@
 					"sidse",
 					"sidespejl",
 					"holdt",
-					"stille"
+					"stille",
+					"bagfra",
+					"frontalt",
+					"forfra",
+					"ramt"
 				],
 				"subcat": [
 					{
@@ -108,7 +114,11 @@
 							"person",
 							"dyr",
 							"ting",
-							"andet"
+							"andet",
+							"bagfra",
+							"frontalt",
+							"forfra",
+							"ramt"
 						],
 						"subcat": [
 							{
@@ -116,7 +126,29 @@
 								"title": "Jeg er blevet påkørt",
 								"description": "Jeg er blevet påkørt",
 								"keywords": [
-									"påkørt"
+									"påkørt",
+									"bagfra",
+									"frontalt",
+									"forfra"
+								],
+								"subcat": [
+									{
+										"id": 342,
+										"title": "Bagfra",
+										"description": "Jeg er blevet påkørt bagfra",
+										"keywords": [
+											"bagfra"
+										]
+									},
+									{
+										"id": 343,
+										"title": "Frontalt",
+										"description": "Jeg er blevet påkørt frontalt",
+										"keywords": [
+											"frontalt",
+											"forfra"
+										]
+									}
 								]
 							},
 							{
@@ -124,7 +156,8 @@
 								"title": "Jeg har ramt et køretøj",
 								"description": "Jeg har ramt et køretøj",
 								"keywords": [
-									"køretøj"
+									"køretøj",
+									"ramt"
 								]
 							},
 							{
@@ -132,7 +165,8 @@
 								"title": "Jeg har ramt en person",
 								"description": "Jeg har ramt en person",
 								"keywords": [
-									"person"
+									"person",
+									"ramt"
 								]
 							},
 							{
@@ -148,7 +182,8 @@
 								"title": "Jeg har ramt en ting eller bygning",
 								"description": "Jeg har ramt en ting eller bygning",
 								"keywords": [
-									"ting"
+									"ting",
+									"bygning"
 								]
 							},
 							{
