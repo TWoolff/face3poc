@@ -1,0 +1,586 @@
+[
+	{
+		"id": 1,
+		"cat": "Bil",
+		"title": "Køretøj",
+		"description": "Bil, motorcykel, knallert, campingvogn",
+		"keywords": [
+			"bil",
+			"skade",
+			"glas",
+			"påkørsel",
+			"påkørt",
+			"køretøj",
+			"person",
+			"dyr",
+			"ting",
+			"andet",
+			"rude",
+			"vindue",
+			"forrude",
+			"bagrude",
+			"siderude",
+			"sidespejl",
+			"sidespejle",
+			"sidespejlet",
+			"sidespejlene",
+			"parkering",
+			"parkeret",
+			"bule",
+			"sidse",
+			"sidespejl",
+			"holdt",
+			"stille",
+			"bagfra",
+			"ramt"
+		],
+		"subcat": [
+			{
+				"id": 2,
+				"title": "Skade på bil",
+				"description": "Skade på bil",
+				"keywords": [
+					"skade",
+					"glas",
+					"påkørsel",
+					"påkørt",
+					"køretøj",
+					"person",
+					"dyr",
+					"ting",
+					"andet",
+					"glas",
+					"rude",
+					"vindue",
+					"forrude",
+					"bagrude",
+					"siderude",
+					"sidespejl",
+					"sidespejle",
+					"sidespejlet",
+					"sidespejlene",
+					"parkering",
+					"parkeret",
+					"bule",
+					"sidse",
+					"sidespejl",
+					"holdt",
+					"stille",
+					"bagfra",
+					"frontalt",
+					"forfra",
+					"ramt"
+				],
+				"subcat": [
+					{
+						"id": 93,
+						"title": "Parkeringsskade",
+						"description": "Parkeringsskade",
+						"keywords": [
+							"parkering",
+							"parkeret",
+							"bule",
+							"sidse",
+							"sidespejl",
+							"holdt",
+							"stille"
+						]
+					},
+					{
+						"id": 3,
+						"title": "Glasskade",
+						"description": "Glasskade",
+						"keywords": [
+							"glas",
+							"rude",
+							"vindue",
+							"forrude",
+							"bagrude",
+							"siderude",
+							"sidespejl",
+							"sidespejle",
+							"sidespejlet",
+							"sidespejlene"
+						]
+					},
+					{
+						"id": 4,
+						"title": "Påkørsel i trafikken",
+						"description": "Påkørsel i trafikken",
+						"keywords": [
+							"påkørsel",
+							"påkørt",
+							"køretøj",
+							"person",
+							"dyr",
+							"ting",
+							"andet",
+							"bagfra",
+							"frontalt",
+							"forfra",
+							"ramt"
+						],
+						"subcat": [
+							{
+								"id": 5,
+								"title": "Jeg er blevet påkørt",
+								"description": "Jeg er blevet påkørt",
+								"keywords": [
+									"påkørt",
+									"bagfra",
+									"frontalt",
+									"forfra"
+								],
+								"subcat": [
+									{
+										"id": 342,
+										"title": "Bagfra",
+										"description": "Jeg er blevet påkørt bagfra",
+										"keywords": [
+											"bagfra"
+										]
+									},
+									{
+										"id": 343,
+										"title": "Frontalt",
+										"description": "Jeg er blevet påkørt frontalt",
+										"keywords": [
+											"frontalt",
+											"forfra"
+										]
+									}
+								]
+							},
+							{
+								"id": 6,
+								"title": "Jeg har ramt et køretøj",
+								"description": "Jeg har ramt et køretøj",
+								"keywords": [
+									"køretøj",
+									"ramt"
+								]
+							},
+							{
+								"id": 7,
+								"title": "Jeg har ramt en person",
+								"description": "Jeg har ramt en person",
+								"keywords": [
+									"person",
+									"ramt"
+								]
+							},
+							{
+								"id": 8,
+								"title": "Jeg har ramt et dyr",
+								"description": "Jeg har ramt et dyr",
+								"keywords": [
+									"dyr"
+								]
+							},
+							{
+								"id": 9,
+								"title": "Jeg har ramt en ting eller bygning",
+								"description": "Jeg har ramt en ting eller bygning",
+								"keywords": [
+									"ting",
+									"bygning"
+								]
+							},
+							{
+								"id": 10,
+								"title": "Andet",
+								"description": "Andet",
+								"keywords": [
+									"andet"
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": 16,
+				"title": "Motorcykel",
+				"description": "Skade på MC, knallert eller camping-/påhængsvogn",
+				"keywords": [
+					"motorcykel",
+					"motorcyklen",
+					"køretøj",
+					"skade",
+					"skadet",
+					"karrosseri",
+					"ridse",
+					"ridser",
+					"bule",
+					"buler",
+					"lygte",
+					"skærm",
+					"mc",
+					"knallert",
+					"campingvogn",
+					"påhængsvogn",
+					"campingvogns",
+					"campingvognen",
+					"glas",
+					"rude",
+					"vindue",
+					"forrude",
+					"bagrude",
+					"siderude",
+					"sidespejl",
+					"sidespejle",
+					"sidespejlet",
+					"sidespejlene"
+				],
+				"subcat": [
+					{
+						"id": 17,
+						"title": "Glasskade",
+						"description": "Glasskade",
+						"keywords": [
+							"glas",
+							"rude",
+							"vindue",
+							"forrude",
+							"bagrude",
+							"siderude",
+							"sidespejl",
+							"sidespejle",
+							"sidespejlet",
+							"sidespejlene"
+						]
+					},
+					{
+						"id": 18,
+						"title": "Tyveri",
+						"description": "Tyveri",
+						"keywords": [
+							"tyveri",
+							"stjålet"
+						]
+					},
+					{
+						"id": 19,
+						"title": "Andet",
+						"description": "Andet",
+						"keywords": [
+							"andet"
+						]
+					}
+				]
+			},
+			{
+				"id": 20,
+				"title": "Andet",
+				"description": "Andet",
+				"keywords": [
+					"andet"
+				],
+				"subcat": []
+			}
+		]
+	},
+	{
+		"id": 27,
+		"cat": "Rejse",
+		"title": "Rejse",
+		"description": "Sygdom på rejse, afbestilling",
+		"keywords": [
+			"rejse",
+			"sygdom",
+			"afbestilling"
+		],
+		"subcat": [
+			{
+				"id": 28,
+				"title": "Sygdom på rejse",
+				"description": "Sygdom på rejse",
+				"keywords": [
+					"sygdom"
+				]
+			},
+			{
+				"id": 29,
+				"title": "Afbestilling af rejse",
+				"description": "Afbestilling af rejse",
+				"keywords": [
+					"afbestilling"
+				]
+			}
+		]
+	},
+	{
+		"id": 21,
+		"cat": "Ulykke",
+		"title": "Person",
+		"description": "Sygdom eller fysiske skader, tandskade",
+		"keywords": [
+			"sygdom",
+			"syg",
+			"skade",
+			"skadet",
+			"skader",
+			"skadede",
+			"tand",
+			"tænder",
+			"tandskade",
+			"ulykke",
+			"person",
+			"fald",
+			"faldt",
+			"faldet",
+			"vrid",
+			"vredet",
+			"ankel",
+			"fod",
+			"ben",
+			"arm",
+			"hånd",
+			"håndled",
+			"ryg",
+			"sport",
+			"fodbold",
+			"håndbold",
+			"skateboard"
+		],
+		"subcat": [
+			{
+				"id": 220,
+				"title": "Sygdom eller fysiske skader",
+				"description": "Sygdom eller fysiske skader",
+				"keywords": [
+					"fald",
+					"faldt",
+					"faldet",
+					"vrid",
+					"vredet",
+					"ankel",
+					"fod",
+					"ben",
+					"arm",
+					"hånd",
+					"håndled",
+					"ryg",
+					"sport",
+					"fodbold",
+					"håndbold",
+					"skateboard"
+				]
+			},
+			{
+				"id": 22,
+				"title": "Andet",
+				"description": "Andet",
+				"keywords": [
+					"andet"
+				]
+			}
+		]
+	},
+	{
+		"id": 29,
+		"cat": "Bygning",
+		"title": "Bygning",
+		"description": "Skade på hus, tag eller bygning",
+		"keywords": [
+			"hus",
+			"huset",
+			"huse",
+			"hjem",
+			"hjemmet",
+			"bolig",
+			"boligen",
+			"lejlighed",
+			"lejligheden",
+			"lejlighedens",
+			"lejlighed",
+			"bygning",
+			"bygningen",
+			"bygningens",
+			"bygninger",
+			"bygningerne",
+			"skade",
+			"rotte",
+			"kloak",
+			"vandskade",
+			"rørskade",
+			"kogeplade",
+			"komfur",
+			"ovn"
+		],
+		"subcat": [
+			{
+				"id": 433,
+				"title": "Vand eller rørskade",
+				"description": "Vand eller rørskade",
+				"keywords": [
+					"rotte",
+					"kloak",
+					"vandskade",
+					"rørskade"
+				]
+			},
+			{
+				"id": 434,
+				"title": "Skade på bygning",
+				"description": "Skade på bygning",
+				"keywords": [
+					"kogeplade",
+					"komfur",
+					"ovn"
+				]
+			},
+			{
+				"id": 30,
+				"title": "Andet",
+				"description": "Andet",
+				"keywords": [
+					"andet"
+				]
+			}
+		]
+	},
+	{
+		"id": 31,
+		"cat": "Cykel",
+		"title": "Cykel",
+		"description": "Tyveri eller skade",
+		"keywords": [
+			"cykel",
+			"cyklen",
+			"cykler",
+			"cyklerne",
+			"tyveri",
+			"skade",
+			"skadet",
+			"skader",
+			"skadede",
+			"stjålet"
+		],
+		"subcat": [
+			{
+				"id": 320,
+				"title": "Tyveri",
+				"description": "Tyveri af cykel",
+				"keywords": [
+					"tyveri",
+					"stjålet"
+				]
+			},
+			{
+				"id": 321,
+				"title": "Skade",
+				"description": "Cykelskade",
+				"keywords": [
+					"skade",
+					"skadet",
+					"skader",
+					"skadede"
+				]
+			},
+			{
+				"id": 32,
+				"title": "Andet",
+				"description": "Andet",
+				"keywords": [
+					"andet"
+				]
+			}
+		]
+	},
+	{
+		"id": 23,
+		"cat": "Indbo",
+		"title": "Ting",
+		"description": "Tyveri eller skade",
+		"keywords": [
+			"campingvogn",
+			"campingvogns",
+			"tyveri",
+			"skade",
+			"lejlighed",
+			"tv",
+			"hus",
+			"huset",
+			"hjem",
+			"hjemmet",
+			"bolig",
+			"boligen",
+			"lejligheden",
+			"lejlighedens",
+			"lejlighed",
+			"ting",
+			"indbo"
+		],
+		"subcat": [
+			{
+				"id": 24,
+				"title": "Andet",
+				"description": "Andet",
+				"keywords": [
+					"andet"
+				]
+			}
+		]
+	},
+	{
+		"id": 25,
+		"cat": "Dyr",
+		"title": "Dyr",
+		"description": "Skadede eller syge kæledyr",
+		"keywords": [
+			"dyr",
+			"kæledyr",
+			"skade",
+			"skadet",
+			"skader",
+			"skadede",
+			"sygdom",
+			"syg",
+			"syge",
+			"sygt",
+			"kat",
+			"hund",
+			"hest",
+			"fugl",
+			"fugle",
+			"fuglen",
+			"fuglene",
+			"hesten",
+			"hestene",
+			"katten",
+			"kattene",
+			"hunden",
+			"hundene"
+		],
+		"subcat": [
+			{
+				"id": 26,
+				"title": "Andet",
+				"description": "Andet",
+				"keywords": [
+					"andet"
+				]
+			}
+		]
+	},
+	{
+		"id": 33,
+		"cat": "Andet",
+		"title": "Andet",
+		"description": "Andre skader",
+		"keywords": [
+			"andet"
+		],
+		"subcat": [
+			{
+				"id": 34,
+				"title": "Andet",
+				"description": "Andet",
+				"keywords": [
+					"andet"
+				]
+			}
+		]
+	}
+]
