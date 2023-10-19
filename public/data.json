@@ -13,16 +13,33 @@
             "køretøj",
             "glas",
             "glasskade",
+            "forrude",
+            "rude",
+            "knust",
+            "sidespejl",
+            "hagl",
             "parkeringskade",
             "parkering",
             "parkeret",
             "parkerer",
+            "holdt",
+            "stille",
+            "ridse",
+            "bule",
+            "kørt",
+            "kørte",
+            "køre",
+            "galt",
             "vejrskade",
             "storm",
             "vejr",
+            "skybrud",
             "påkørt",
             "påkørte",
             "bagfra",
+            "bagpå",
+            "kofanger",
+            "baglygte",
             "ramt",
             "ramte",
             "forfra",
@@ -51,7 +68,18 @@
                 "description": "Glasskade på køretøj",
                 "keywords": [
                     "glas",
-                    "glasskade"
+                    "glasskade",
+                    "forrude",
+                    "rude",
+                    "knust",
+                    "sidespejl",
+                    "bil",
+                    "campingvogn",
+                    "mortorcykel",
+                    "hagl",
+                    "køre",
+                    "kørt",
+                    "kørte"
                 ],
                 "subcat": [],
                 "form": null
@@ -65,7 +93,17 @@
                     "parkeringsskade",
                     "parkering",
                     "parkeret",
-                    "parkerer"
+                    "parkerer",
+                    "holdt",
+                    "bil",
+                    "holdt",
+                    "stille",
+                    "ridse",
+                    "bule",
+                    "kørt",
+                    "kørte",
+                    "køre",
+                    "galt"
                 ],
                 "subcat": [],
                 "form": null
@@ -79,7 +117,8 @@
                 "subcat": [
                     "vejrskade",
                     "storm",
-                    "vejr"
+                    "vejr",
+                    "skybrud"
                 ],
                 "form": "koretojstormmitprivat"
             },
@@ -93,7 +132,15 @@
                     "påkørte",
                     "bagfra",
                     "ramt",
-                    "ramte"
+                    "ramte",
+                    "ridse",
+                    "bule",
+                    "kørt",
+                    "køre",
+                    "kørte",
+                    "bagpå",
+                    "kofanger",
+                    "baglygte"
                 ],
                 "subcat": [],
                 "form": "blevet-paakoert-bagfra-v2"
@@ -701,14 +748,45 @@
         "title": "Rejse",
         "description": "Sygdom/skade på rejsen, afbestilt rejse, forsinket/mistet baggage",
         "form": null,
-        "keywords": [],
+        "keywords": [
+            "rejse",
+            "sygdom",
+            "syg",
+            "skade",
+            "rejse",
+            "rejsen",
+            "ferie",
+            "ferien",
+            "ski",
+            "skitur",
+            "skituren",
+            "afbestil",
+            "afbestilling",
+            "afbestilt",
+            "forsinket",
+            "forsinkelse",
+            "mistet",
+            "mistede",
+            "bagage",
+            "taske",
+            "tasker",
+            "taskerne"
+        ],
         "subcat": [
             {
                 "id": 56,
                 "cat": "Rejse",
                 "title": "Sygdom/skade på rejsen",
                 "description": "Sygdom/skade på rejsen",
-                "keywords": [],
+                "keywords": [
+                    "syg",
+                    "sygdom",
+                    "skade",
+                    "rejse",
+                    "rejsen",
+                    "ferie",
+                    "ferien"
+                ],
                 "subcat": [],
                 "form": "uheldigparejsenmitprivat"
             },
@@ -717,7 +795,16 @@
                 "cat": "Rejse",
                 "title": "Sygdom/skade på skituren",
                 "description": "Sygdom/skade på skituren",
-                "keywords": [],
+                "keywords": [
+                    "syg",
+                    "sygdom",
+                    "skade",
+                    "ski",
+                    "skitur",
+                    "skituren",
+                    "ferie",
+                    "ferien"
+                ],
                 "subcat": [],
                 "form": "uheldigpaskiturenmitprivat"
             },
@@ -726,16 +813,29 @@
                 "cat": "Rejse",
                 "title": "Afbestilt rejse",
                 "description": "Afbestilt rejse",
-                "keywords": [],
+                "keywords": [
+                    "afbestilt",
+                    "afbestil",
+                    "afbestilling"
+                ],
                 "subcat": [],
                 "form": null
             },
             {
                 "id": 59,
                 "cat": "Rejse",
-                "title": "Forsinket/mistet baggage",
-                "description": "Forsinket/mistet baggage",
-                "keywords": [],
+                "title": "Forsinket / mistet bagage",
+                "description": "Forsinket / mistet bagage",
+                "keywords": [
+                    "forsinket",
+                    "forsinkelse",
+                    "mistet",
+                    "mistede",
+                    "bagage",
+                    "taske",
+                    "tasker",
+                    "taskerne"
+                ],
                 "subcat": [],
                 "form": null
             }

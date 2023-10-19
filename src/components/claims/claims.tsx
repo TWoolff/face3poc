@@ -158,7 +158,7 @@ const Claims = () => {
 		{filteredData.map(({ id, title, description, cat, subcat }: IData) => (
 			<Fragment key={id}>
 				<Claim {...{ id, title, cat, subcat, query, keywords, description }} linkTo={filteredData.length === 1 ? '' : cat } setQuery={setQuery} filteredWords={filteredWords} setFilteredWords={setFilteredWords} className={filteredData.length === 1 ? `${css.claim} ${css.active}` : css.claim} />
-				{filteredData.length === 1 && deepestObject && <DeepClaim id={deepestObject.id} title={deepestObject.title} description={deepestObject.description} keywords={deepestObject.keywords} linkTo={'/form'} onClick={() => handleDeepClaimClick(deepestObject)} />}
+				{filteredData.length === 1 && deepestObject && <DeepClaim {...deepestObject} onClick={() => handleDeepClaimClick(deepestObject)} />}			
 			</Fragment>
 		))}
 		</section>
