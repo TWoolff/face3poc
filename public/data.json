@@ -377,6 +377,33 @@
                 ],
                 "subcat": [],
                 "form": "trafikale-skader-andet"
+            },
+            {
+                "id": 169,
+                "cat": "Køretøj",
+                "title": "Skade på bil",
+                "description": "Skade på bil",
+                "keywords": [],
+                "subcat": [],
+                "form": null
+            },
+            {
+                "id": 170,
+                "cat": "Køretøj",
+                "title": "Skade på MC, knaller eller camping-/påhængsvogn",
+                "description": "Skade på MC, knaller eller camping-/påhængsvogn",
+                "keywords": [],
+                "subcat": [],
+                "form": null
+            },
+            {
+                "id": 171,
+                "cat": "Køretøj",
+                "title": "Andet",
+                "description": "Andet",
+                "keywords": [],
+                "subcat": [],
+                "form": null
             }
         ]
     },

@@ -1,0 +1,10 @@
+@import '../components/claims/claims.module.css';
+
+.category {
+    display: flex;
+    flex-direction: column;
+
+    .claim {
+        @extend .claim;
+    }
+}

@@ -5,10 +5,21 @@ import Arrow from '../../assets/images/Arrow.svg?react'
 import Glyph from '../../assets/images/Glyph.svg?react'
 import css from './claims.module.css'
 
-const Claim = ({ title, description, className, linkTo, setQuery, filteredWords, setFilteredWords }: IData) => {
+const Claim = ({ id, title, description, className, cat, filteredWords }: IData) => {
+	const navigate = useNavigate();
+
 	const handleClick = () => {
-		setQuery(linkTo)
-		setFilteredWords([])
+		const query = {
+			id: id.toString(),
+			cat,
+			title,
+			description,
+			filteredWords: filteredWords.join(',')
+		};
+		navigate({
+			pathname: '/category',
+			search: '?' + new URLSearchParams(query).toString(),
+		})
 	}
 
 	return (
@@ -22,6 +33,7 @@ const Claim = ({ title, description, className, linkTo, setQuery, filteredWords,
 		</button>
 	)
 }
+
 
 const DeepClaim = ({ title, description, onClick }: IData) => {
     return (
@@ -157,7 +169,7 @@ const Claims = () => {
 		<section className={css.claims}>
 		{filteredData.map(({ id, title, description, cat, subcat }: IData) => (
 			<Fragment key={id}>
-				<Claim {...{ id, title, cat, subcat, query, keywords, description }} linkTo={filteredData.length === 1 ? '' : cat } setQuery={setQuery} filteredWords={filteredWords} setFilteredWords={setFilteredWords} className={filteredData.length === 1 ? `${css.claim} ${css.active}` : css.claim} />
+				<Claim {...{ id, title, cat, subcat, query, keywords, description }} setQuery={setQuery} filteredWords={filteredWords} setFilteredWords={setFilteredWords} className={filteredData.length === 1 ? `${css.claim} ${css.active}` : css.claim} />
 				{filteredData.length === 1 && deepestObject && <DeepClaim {...deepestObject} onClick={() => handleDeepClaimClick(deepestObject)} />}			
 			</Fragment>
 		))}

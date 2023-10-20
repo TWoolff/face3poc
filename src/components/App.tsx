@@ -2,6 +2,7 @@ import { createContext, useEffect, useState } from 'react'
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import { Header } from './header/header'
 import { Home } from '../pages/home'
+import { Category } from '../pages/category'
 import { Form } from '../pages/form'
 
 interface IData {
@@ -10,7 +11,6 @@ interface IData {
 	description: string
 	keywords: string[]
 	subcat?: (IData & { subcat?: IData[] })[]
-	linkTo?: string
 	[key: string]: any
 }
 
@@ -65,6 +65,7 @@ const App = () => {
 					<Routes>
 						<Route path="/" element={<Home />} />
 						<Route path="/form" element={<Form />} />
+						<Route path="category" element={<Category />} />
 					</Routes>
 				</main>
 			</BrowserRouter>
