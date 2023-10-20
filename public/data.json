@@ -63,7 +63,7 @@
         "subcat": [
             {
                 "id": 2,
-                "cat": "Køretøj",
+                "cat": "Køretøj - Skade på bil",
                 "title": "Glasskade på køretøj",
                 "description": "Glasskade på køretøj",
                 "keywords": [
@@ -86,7 +86,7 @@
             },
             {
                 "id": 3,
-                "cat": "Køretøj",
+                "cat": "Køretøj - Skade på bil",
                 "title": "Parkeingsskade",
                 "description": "Parkeingsskade",
                 "keywords": [
@@ -110,7 +110,7 @@
             },
             {
                 "id": 4,
-                "cat": "Køretøj",
+                "cat": "Køretøj - Skade på bil",
                 "title": "Vejrskade",
                 "description": "Vejrskade",
                 "keywords": [],
@@ -124,7 +124,8 @@
             },
             {
                 "id": 5,
-                "cat": "Køretøj",
+                "cat": "Køretøj - Skade på bil",
+                "group": "Påkørsel i trafikken",
                 "title": "Jeg er blevet påkørt bagfra",
                 "description": "Jeg er blevet påkørt bagfra",
                 "keywords": [
@@ -147,7 +148,8 @@
             },
             {
                 "id": 6,
-                "cat": "Køretøj",
+                "cat": "Køretøj - Skade på bil",
+                "group": "Påkørsel i trafikken",
                 "title": "Jeg er blevet påkørt frontalt",
                 "description": "Jeg er blevet påkørt frontalt",
                 "keywords": [
@@ -163,7 +165,8 @@
             },
             {
                 "id": 8,
-                "cat": "Køretøj",
+                "cat": "Køretøj - Skade på bil",
+                "group": "Påkørsel i trafikken",
                 "title": "Jeg er blevet påkørt fra siden",
                 "description": "Jeg er blevet påkørt fra siden",
                 "keywords": [
@@ -179,7 +182,8 @@
             },
             {
                 "id": 9,
-                "cat": "Køretøj",
+                "cat": "Køretøj - Skade på bil",
+                "group": "Påkørsel i trafikken",
                 "title": "Jeg har ramt et køretøj",
                 "description": "Jeg har ramt et køretøj",
                 "keywords": [],
@@ -193,7 +197,8 @@
             },
             {
                 "id": 10,
-                "cat": "Køretøj",
+                "cat": "Køretøj - Skade på bil",
+                "group": "Påkørsel i trafikken",
                 "title": "Jeg har ramt en ting eller en bygning",
                 "description": "Jeg har ramt en ting eller en bygning",
                 "keywords": [
@@ -208,7 +213,8 @@
             },
             {
                 "id": 11,
-                "cat": "Køretøj",
+                "cat": "Køretøj - Skade på bil",
+                "group": "Påkørsel i trafikken",
                 "title": "Jeg har ramt et dyr",
                 "description": "Jeg har ramt et dyr",
                 "keywords": [
@@ -222,7 +228,8 @@
             },
             {
                 "id": 12,
-                "cat": "Køretøj",
+                "cat": "Køretøj - Skade på bil",
+                "group": "Påkørsel i trafikken",
                 "title": "Jeg har ramt en person",
                 "description": "Jeg har ramt en person",
                 "keywords": [
@@ -238,7 +245,7 @@
             },
             {
                 "id": 13,
-                "cat": "Køretøj",
+                "cat": "Køretøj - Skade på bil",
                 "title": "Hærværk",
                 "description": "Hærværk",
                 "keywords": [
@@ -250,7 +257,7 @@
             },
             {
                 "id": 14,
-                "cat": "Køretøj",
+                "cat": "Køretøj - Skade på bil",
                 "title": "Tyveri ad køretøj",
                 "description": "Tyveri ad køretøj",
                 "keywords": [
@@ -262,7 +269,7 @@
             },
             {
                 "id": 15,
-                "cat": "Køretøj",
+                "cat": "Køretøj - Skade på bil",
                 "title": "Andet",
                 "description": "Andet",
                 "keywords": [
@@ -297,8 +304,8 @@
             {
                 "id": 17,
                 "cat": "Cykel",
-                "title": "Skade på ting eller cykel",
-                "description": "Skade på ting eller cykel",
+                "title": "Skade på cykel",
+                "description": "Skade på cykel",
                 "keywords": [
                     "skade",
                     "ting",
@@ -562,8 +569,8 @@
             {
                 "id": 35,
                 "cat": "Ting",
-                "title": "Andres ting/elektronik (ansvar)",
-                "description": "Andres ting/elektronik (ansvar)",
+                "title": "Andres ting",
+                "description": "Andres ting",
                 "keywords": [],
                 "subcat": [],
                 "form": null
@@ -571,8 +578,8 @@
             {
                 "id": 36,
                 "cat": "Ting",
-                "title": "Hærvæk på indbo",
-                "description": "Hærvæk på indbo",
+                "title": "Hærvæk",
+                "description": "Hærvæk",
                 "keywords": [],
                 "subcat": [],
                 "form": "tyverihaervaerkmitprivat"
@@ -847,14 +854,45 @@
         "title": "Dyr",
         "description": "Skadede eller syge kæledyr",
         "form": null,
-        "keywords": [],
+        "keywords": [
+            "dyr",
+            "kæledyr",
+            "skade",
+            "skadede",
+            "skadet",
+            "syg",
+            "syge",
+            "sygt",
+            "hund",
+            "kat",
+            "hest",
+            "skader",
+            "andre",
+            "andres",
+            "andens",
+            "husdyr"
+        ],
         "subcat": [
             {
                 "id": 61,
                 "cat": "Dyr",
-                "title": "Din hund/kat/hest/skader/dyr",
-                "description": "Din hund/kat/hest/skader/dyr",
-                "keywords": [],
+                "title": "Din hund / kat / hest / skader / dyr",
+                "description": "Din hund / kat / hest / skader / dyr",
+                "keywords": [
+                    "hund",
+                    "kat",
+                    "hest",
+                    "skade",
+                    "skadede",
+                    "skadet",
+                    "syg",
+                    "syge",
+                    "sygt",
+                    "dyr",
+                    "kæledyr",
+                    "skader",
+                    "husdyr"
+                ],
                 "subcat": [],
                 "form": null
             },
@@ -863,7 +901,15 @@
                 "cat": "Dyr",
                 "title": "Andres hund",
                 "description": "Andres hund",
-                "keywords": [],
+                "keywords": [
+                    "hund",
+                    "andres",
+                    "andens",
+                    "andre",
+                    "skadet",
+                    "skade",
+                    "skadede"
+                ],
                 "subcat": [],
                 "form": "andreshundansvarmitprivat"
             },
@@ -872,7 +918,17 @@
                 "cat": "Dyr",
                 "title": "Andres husdyr",
                 "description": "Andres husdyr",
-                "keywords": [],
+                "keywords": [
+                    "husdyr",
+                    "kat",
+                    "hest",
+                    "andres",
+                    "andens",
+                    "andre",
+                    "skadet",
+                    "skade",
+                    "skadede"
+                ],
                 "subcat": [],
                 "form": "andreshusdyrmitprivat"
             }
