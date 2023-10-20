@@ -87,6 +87,7 @@
             {
                 "id": 2,
                 "cat": "Køretøj - Skade på bil",
+                "group":"Køretøj - Skade på bil",
                 "title": "Glasskade på køretøj",
                 "description": "Glasskade på køretøj",
                 "keywords": [
@@ -110,6 +111,7 @@
             {
                 "id": 3,
                 "cat": "Køretøj - Skade på bil",
+                "group": "Køretøj - Skade på bil",
                 "title": "Parkeingsskade",
                 "description": "Parkeingsskade",
                 "keywords": [
@@ -134,6 +136,7 @@
             {
                 "id": 4,
                 "cat": "Køretøj - Skade på bil",
+                "group": "Køretøj - Skade på bil",
                 "title": "Vejrskade",
                 "description": "Vejrskade",
                 "keywords": [],
@@ -144,6 +147,16 @@
                     "skybrud"
                 ],
                 "form": "koretojstormmitprivat"
+            },
+            {
+                "id": 497,
+                "cat": "Køretøj - Skade på bil",
+                "group": "Køretøj - Skade på bil",
+                "title": "Påkørsel i trafikken",
+                "description": "Påkørsel i trafikken",
+                "keywords": [],
+                "subcat": [],
+                "form": null
             },
             {
                 "id": 5,
@@ -337,6 +350,7 @@
             {
                 "id": 13,
                 "cat": "Køretøj - Skade på bil",
+                "group": "Køretøj - Skade på bil",
                 "title": "Hærværk",
                 "description": "Hærværk",
                 "keywords": [
@@ -354,8 +368,9 @@
             {
                 "id": 14,
                 "cat": "Køretøj - Skade på bil",
-                "title": "Tyveri ad køretøj",
-                "description": "Tyveri ad køretøj",
+                "group": "Køretøj - Skade på bil",
+                "title": "Tyveri af køretøj",
+                "description": "Tyveri af køretøj",
                 "keywords": [
                     "bil",
                     "tyveri",
@@ -369,6 +384,7 @@
             {
                 "id": 15,
                 "cat": "Køretøj - Skade på bil",
+                "group": "Køretøj - Skade på bil",
                 "title": "Andet",
                 "description": "Andet",
                 "keywords": [
@@ -381,6 +397,7 @@
             {
                 "id": 169,
                 "cat": "Køretøj",
+                "group": "Køretøj - Skade på bil",
                 "title": "Skade på bil",
                 "description": "Skade på bil",
                 "keywords": [],

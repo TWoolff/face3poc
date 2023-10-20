@@ -84,6 +84,42 @@
     }
 }
 
+.subCat {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+
+    @media (min-width: 768px) {
+        margin-bottom: 0;
+        margin-left: -0.3rem;
+    }
+
+    .claim {
+        border-radius: 0;
+        margin-bottom: 3px;
+        width: 100%;
+
+        @media (min-width: 768px) {
+            border-top-right-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+        }
+
+        &:last-child {
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            margin-bottom: 0;
+
+            @media (min-width: 768px) {
+                border-bottom-left-radius: 0;
+            }
+        }
+    }
+
+    .claimInfo {
+        max-width: 15rem;
+    }
+}
+
 .keyWords {
     display: block;
     padding-top: 1rem;

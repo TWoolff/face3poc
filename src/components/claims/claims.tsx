@@ -123,12 +123,12 @@ const Claims = () => {
 
 	return (
 		<section className={css.claims}>
-		{filteredData.map(({ id, title, description, cat, subcat }: IData) => (
-			<Fragment key={id}>
-				<Claim {...{ id, title, cat, subcat, query, keywords, description }} setQuery={setQuery} filteredWords={filteredWords} setFilteredWords={setFilteredWords} className={filteredData.length === 1 ? `${css.claim} ${css.active}` : css.claim} />
-				{filteredData.length === 1 && deepestObject && <DeepClaim {...deepestObject} onClick={() => handleDeepClaimClick(deepestObject)} />}			
-			</Fragment>
-		))}
+			{filteredData.map(({ id, title, description, cat, subcat }: IData) => (
+				<Fragment key={id}>
+					<Claim {...{ id, title, cat, subcat, query, keywords, description }} setQuery={setQuery} filteredWords={filteredWords} setFilteredWords={setFilteredWords} className={filteredData.length === 1 ? `${css.claim} ${css.active}` : css.claim} />
+					{filteredData.length === 1 && deepestObject && <DeepClaim {...deepestObject} onClick={() => handleDeepClaimClick(deepestObject)} />}			
+				</Fragment>
+			))}
 		</section>
 	)
 }
