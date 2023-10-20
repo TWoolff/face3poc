@@ -30,6 +30,8 @@
             "kørte",
             "køre",
             "galt",
+            "stødt",
+            "ind",
             "vejrskade",
             "storm",
             "vejr",
@@ -40,6 +42,8 @@
             "bagpå",
             "kofanger",
             "baglygte",
+            "eneuheld",
+            "solouheld",
             "ramt",
             "ramte",
             "forfra",
@@ -48,15 +52,34 @@
             "ting",
             "genstand",
             "bygning",
+            "skilt",
             "dyr",
+            "hund",
+            "kat",
+            "rådyr",
+            "dådyr",
             "hjort",
             "person",
             "mand",
             "dame",
             "kvinde",
+            "barn",
+            "dreng",
+            "pige",
+            "fodgænger",
+            "forbipasserende",
+            "gående",
+            "gik",
+            "passerende",
+            "passerede",
             "hærværk",
             "ødelagt",
+            "smadret",
+            "fyrvækeri",
+            "brand",
             "tyveri",
+            "stjålet",
+            "væk",
             "andet",
             "tvivl"
         ],
@@ -158,7 +181,13 @@
                     "frontalt",
                     "ramt",
                     "ramte",
-                    "forfra"
+                    "forfra",
+                    "ridse",
+                    "bule",
+                    "kørt",
+                    "køre",
+                    "kørte",
+                    "galt"
                 ],
                 "subcat": [],
                 "form": "trafikale-skader-andet"
@@ -175,7 +204,12 @@
                     "frontalt",
                     "ramt",
                     "ramte",
-                    "siden"
+                    "siden",
+                    "ridse",
+                    "bule",
+                    "kørt",
+                    "køre",
+                    "kørte"
                 ],
                 "subcat": [],
                 "form": "trafikale-skader-andet"
@@ -191,7 +225,17 @@
                     "ramt",
                     "ramte",
                     "køretøj",
-                    "bil"
+                    "bil",
+                    "ridse",
+                    "bule",
+                    "kørt",
+                    "køre",
+                    "kørte",
+                    "påkørt",
+                    "påkørte",
+                    "stødt",
+                    "ind",
+                    "galt"
                 ],
                 "form": "ramt-et-koeretoej-v2"
             },
@@ -206,7 +250,26 @@
                     "ramte",
                     "ting",
                     "bygning",
-                    "genstand"
+                    "genstand",
+                    "skilt",
+                    "ridse",
+                    "bule",
+                    "kørt",
+                    "kørte",
+                    "køre",
+                    "foran",
+                    "forrest",
+                    "eneuheld",
+                    "solouheld",
+                    "stødt",
+                    "ind",
+                    "forrude",
+                    "bagpå",
+                    "kofanger",
+                    "baglygte",
+                    "påkørt",
+                    "påkørte",
+                    "galt"
                 ],
                 "subcat": [],
                 "form": "jeg-har-ramt-en-genstand"
@@ -221,7 +284,19 @@
                     "ramt",
                     "ramte",
                     "dyr",
-                    "hjort"
+                    "hjort",
+                    "ridse",
+                    "bule",
+                    "kørt",
+                    "køre",
+                    "kørte",
+                    "kat",
+                    "hund",
+                    "rådyr",
+                    "dådyr",
+                    "stødt",
+                    "ind",
+                    "galt"
                 ],
                 "subcat": [],
                 "form": "jeg-har-ramt-et-dyr"
@@ -238,7 +313,23 @@
                     "person",
                     "mand",
                     "dame",
-                    "kvinde"
+                    "kvinde",
+                    "barn",
+                    "pige",
+                    "dreng",
+                    "påkørt",
+                    "påkørte",
+                    "fodgænger",
+                    "forbipasserende",
+                    "gående",
+                    "gik",
+                    "passerende",
+                    "passerede",
+                    "stødt",
+                    "ind",
+                    "køre",
+                    "kørt",
+                    "kørte"
                 ],
                 "subcat": [],
                 "form": "jeg-har-ramt-en-person"
@@ -250,7 +341,12 @@
                 "description": "Hærværk",
                 "keywords": [
                     "hærværk",
-                    "ødelagt"
+                    "ødelagt",
+                    "ridse",
+                    "bule",
+                    "smadret",
+                    "fyrvækeri",
+                    "brand"
                 ],
                 "subcat": [],
                 "form": "tyverihaervaerkmitprivat"
@@ -261,8 +357,11 @@
                 "title": "Tyveri ad køretøj",
                 "description": "Tyveri ad køretøj",
                 "keywords": [
+                    "bil",
                     "tyveri",
-                    "køretøj"
+                    "køretøj",
+                    "stjålet",
+                    "væk"
                 ],
                 "subcat": [],
                 "form": "tyveriafkoretojmitprivat"
@@ -291,8 +390,12 @@
             "cykel",
             "ting",
             "genstand",
+            "ødelagt",
+            "stykker",
             "tyveri",
             "stjålet",
+            "taget",
+            "væk",
             "vejr",
             "storm",
             "skade",
@@ -309,7 +412,9 @@
                 "keywords": [
                     "skade",
                     "ting",
-                    "genstand"
+                    "genstand",
+                    "ødelagt",
+                    "stykker"
                 ],
                 "subcat": [],
                 "form": "skade-pa-ting-eller-cykel"
@@ -321,24 +426,12 @@
                 "description": "Tyveri af cykel",
                 "keywords": [
                     "tyveri",
-                    "stjålet"
+                    "stjålet",
+                    "taget",
+                    "væk"
                 ],
                 "subcat": [],
                 "form": "cykeltyverimitprivat"
-            },
-            {
-                "id": 19,
-                "cat": "Cykel",
-                "title": "Vejrskade",
-                "description": "Vejrskade",
-                "keywords": [
-                    "vejr",
-                    "storm",
-                    "skade",
-                    "vejrskade"
-                ],
-                "subcat": [],
-                "form": null
             },
             {
                 "id": 20,
@@ -396,8 +489,8 @@
             {
                 "id": 22,
                 "cat": "Person",
-                "title": "Sygdom eller fysiske skader (voksen)",
-                "description": "Sygdom eller fysiske skader (voksen)",
+                "title": "Sygdom eller fysiske skader (ikke på rejse)",
+                "description": "Sygdom eller fysiske skader (ikke på rejse)",
                 "keywords": [
                     "sygdom",
                     "fysisk",
@@ -940,14 +1033,36 @@
         "title": "Andre skader",
         "form": null,
         "description": "Arbejdsløshed, Retshjælp, Båd",
-        "keywords": [],
+        "keywords": [
+            "arbejdsløshed",
+            "retshjælp",
+            "båd",
+            "job",
+            "arbejdsløs",
+            "over",
+            "under",
+            "advokat",
+            "storm",
+            "skybrud",
+            "råd",
+            "sejlbåd",
+            "brand",
+            "hærværk",
+            "kæntre",
+            "grund"
+        ],
         "subcat": [
             {
                 "id": 65,
                 "cat": "Andre skader",
                 "title": "Arbejdsløshed under 50.000 kr",
                 "description": "Arbejdsløshed under 50.000 kr",
-                "keywords": [],
+                "keywords": [
+                    "job",
+                    "arbejdsløs",
+                    "arbejdsløshed",
+                    "under"
+                ],
                 "subcat": [],
                 "form": null
             },
@@ -956,7 +1071,12 @@
                 "cat": "Andre skader",
                 "title": "Arbejdsløshed over 50.000 kr",
                 "description": "Arbejdsløshed over 50.000 kr",
-                "keywords": [],
+                "keywords": [
+                    "job",
+                    "arbejdsløs",
+                    "arbejdsløshed",
+                    "over"
+                ],
                 "subcat": [],
                 "form": null
             },
@@ -965,7 +1085,10 @@
                 "cat": "Andre skader",
                 "title": "Retshjælp",
                 "description": "Retshjælp",
-                "keywords": [],
+                "keywords": [
+                    "advokat",
+                    "retshjælp"
+                ],
                 "subcat": [],
                 "form": null
             },
@@ -974,7 +1097,17 @@
                 "cat": "Andre skader",
                 "title": "Båd",
                 "description": "Båd",
-                "keywords": [],
+                "keywords": [
+                    "båd",
+                    "storm",
+                    "skybrud",
+                    "råd",
+                    "sejlbåd",
+                    "brand",
+                    "hærværk",
+                    "kæntre",
+                    "grund"
+                ],
                 "subcat": [],
                 "form": "badmitprivat"
             }

@@ -1,5 +1,6 @@
 import { useLocation } from 'react-router-dom'
 import { Hero } from '../components/hero/hero'
+import css from './form.module.css'
 
 const Form = () => {
     const location = useLocation()
@@ -9,6 +10,9 @@ const Form = () => {
     return ( 
         <>
             <Hero title={deepestObject.title} />
+            <section className={css.form}>
+                {deepestObject.form && <p>Blanketnavn: {deepestObject.form}</p>}
+            </section>
         </>
     )
 }
