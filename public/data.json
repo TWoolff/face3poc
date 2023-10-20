@@ -88,6 +88,7 @@
                 "id": 2,
                 "cat": "Køretøj - Skade på bil",
                 "group":"Køretøj - Skade på bil",
+                "parent": "Skade på bil",
                 "title": "Glasskade på køretøj",
                 "description": "Glasskade på køretøj",
                 "keywords": [
@@ -162,6 +163,7 @@
                 "id": 5,
                 "cat": "Køretøj - Skade på bil",
                 "group": "Påkørsel i trafikken",
+                "parent": "Påkørsel i trafikken",
                 "title": "Jeg er blevet påkørt bagfra",
                 "description": "Jeg er blevet påkørt bagfra",
                 "keywords": [

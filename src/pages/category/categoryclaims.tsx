@@ -10,46 +10,36 @@ interface ClaimsCatProps {
 
 const ClaimsCat = ({ filteredCatData }: ClaimsCatProps) => {
     const [subItems, setSubItems] = useState<IData[]>([])
-
+    
     const filterSubcatByCat = (subcat: IData[], cat: string): IData[] => { return subcat.filter((item) => item.cat === cat) }
-
-    const filterSubcatByGroup = (subcat: IData[], group: string): IData[] => {
-        return subcat.filter((item) => item.group === group)
+    
+    const filterSubcatByGroup = (subcat: IData[], group: string, cat: string): IData[] => {
+        return subcat.filter((item) => item.group === group && item.cat !== cat)
     }
 
-    const handleSubItemClick = (group: string) => {
+    const handleSubItemClick = (group: string, cat: string) => {
         const subItems = filteredCatData.flatMap((item) =>
-            filterSubcatByGroup(item.subcat || [], group)
+            filterSubcatByGroup(item.subcat || [], group, cat)
         )
         setSubItems(subItems)
     }
 
-
-    console.log('sub', subItems)
+    console.log(subItems)
     return (
         <>
             {filteredCatData.map((item) => {
                 return (
                     <section key={item.id} className={css.category}>
-                        <button
-                            className={`${css.claim} ${css.active}`}
-                            onClick={() => {
-                                window.location.href = '/'
-                            }}
-                        >
+                        <button className={`${css.claim} ${css.active}`} onClick={() => { window.location.href = '/' }}>
                             <div className={css.claimInfo}>
-                                <h2>{item.title}</h2>
+                                <h2>{subItems.length === 0 ? item.title : subItems[0].parent}</h2>
                             </div>
                             <Arrow />
                         </button>
-                        {item.subcat &&
+                        {subItems.length === 0 && item.subcat &&
                             filterSubcatByCat(item.subcat, item.cat).map((subItem) => {
                                 return (
-                                    <button
-                                        className={`${css.claim} ${css.subcat}`}
-                                        key={subItem.id}
-                                        onClick={() => handleSubItemClick(subItem.group)}
-                                    >
+                                    <button className={`${css.claim} ${css.subcat}`} key={subItem.id} onClick={() => handleSubItemClick(subItem.group, subItem.cat)}>
                                         <div className={css.claimInfo}>
                                             <h2>{subItem.title}</h2>
                                         </div>
@@ -59,12 +49,14 @@ const ClaimsCat = ({ filteredCatData }: ClaimsCatProps) => {
                             })}
                         {subItems.length > 0 && (
                             <div className={css.subItems}>
-                                <h3>Sub Items:</h3>
-                                <ul>
-                                    {subItems.map((subItem) => (
-                                        <li key={subItem.id}>{subItem.title}</li>
-                                    ))}
-                                </ul>
+                                {subItems.map((subItem) => (
+                                    <button className={`${css.claim} ${css.subcat}`} key={subItem.id} onClick={() => handleSubItemClick(subItem.group, subItem.cat)}>
+                                        <div className={css.claimInfo}>
+                                            <h2>{subItem.title}</h2>
+                                        </div>
+                                        <Glyph />
+                                    </button>
+                                ))}
                             </div>
                         )}
                         <div className={css.back}>

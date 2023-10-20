@@ -7,6 +7,8 @@ import { Form } from '../pages/form/form'
 
 interface IData {
 	id: number
+	group: string
+	parent?: string
 	title: string
 	description: string
 	keywords: string[]

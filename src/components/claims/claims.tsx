@@ -112,7 +112,7 @@ const Claims = () => {
 		return deepestObject
 	}
 
-	let deepestObject: IData = { id: 0, title: '', description: '', cat: '', keywords: [], subcat: [] }
+	let deepestObject: IData = { id: 0, title: '', description: '', cat: '', keywords: [], subcat: [], group: '' }
 
 	filteredData.forEach((item) => {
 		const itemDeepestObject = findDeepestObject(item, filteredWords)
@@ -123,9 +123,9 @@ const Claims = () => {
 
 	return (
 		<section className={css.claims}>
-			{filteredData.map(({ id, title, description, cat, subcat }: IData) => (
+			{filteredData.map(({ id, title, description, cat, subcat, group }: IData) => (
 				<Fragment key={id}>
-					<Claim {...{ id, title, cat, subcat, query, keywords, description }} setQuery={setQuery} filteredWords={filteredWords} setFilteredWords={setFilteredWords} className={filteredData.length === 1 ? `${css.claim} ${css.active}` : css.claim} />
+					<Claim {...{ id, title, cat, subcat, query, keywords, description, group }} setQuery={setQuery} filteredWords={filteredWords} setFilteredWords={setFilteredWords} className={filteredData.length === 1 ? `${css.claim} ${css.active}` : css.claim} />
 					{filteredData.length === 1 && deepestObject && <DeepClaim {...deepestObject} onClick={() => handleDeepClaimClick(deepestObject)} />}			
 				</Fragment>
 			))}
