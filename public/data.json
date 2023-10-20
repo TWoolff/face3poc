@@ -107,7 +107,7 @@
                     "kørte"
                 ],
                 "subcat": [],
-                "form": null
+                "form": "glas-skade"
             },
             {
                 "id": 3,
@@ -140,13 +140,13 @@
                 "group": "Køretøj - Skade på bil",
                 "title": "Vejrskade",
                 "description": "Vejrskade",
-                "keywords": [],
-                "subcat": [
+                "keywords": [
                     "vejrskade",
                     "storm",
                     "vejr",
                     "skybrud"
                 ],
+                "subcat": [],
                 "form": "koretojstormmitprivat"
             },
             {
@@ -235,8 +235,7 @@
                 "group": "Påkørsel i trafikken",
                 "title": "Jeg har ramt et køretøj",
                 "description": "Jeg har ramt et køretøj",
-                "keywords": [],
-                "subcat": [
+                "keywords": [
                     "ramt",
                     "ramte",
                     "køretøj",
@@ -252,6 +251,7 @@
                     "ind",
                     "galt"
                 ],
+                "subcat": [],
                 "form": "ramt-et-koeretoej-v2"
             },
             {
