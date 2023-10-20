@@ -1,53 +1,9 @@
 import { Fragment, useContext, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { DataContext, IAppState, IData } from '../App'
-import Arrow from '../../assets/images/Arrow.svg?react'
-import Glyph from '../../assets/images/Glyph.svg?react'
+import { Claim } from './claim'
+import { DeepClaim } from './deepclaim'
 import css from './claims.module.css'
-
-const Claim = ({ id, title, description, className, cat, filteredWords }: IData) => {
-	const navigate = useNavigate();
-
-	const handleClick = () => {
-		const query = {
-			id: id.toString(),
-			cat,
-			title,
-			description,
-			filteredWords: filteredWords.join(',')
-		};
-		navigate({
-			pathname: '/category',
-			search: '?' + new URLSearchParams(query).toString(),
-		})
-	}
-
-	return (
-		<button className={className} onClick={handleClick}>
-			<div className={css.claimInfo}>
-				<h2>{title}</h2>
-				{description && <p>{description}</p>}
-				{filteredWords.length > 0 && <p className={css.keyWords}>Nøgleord: {filteredWords.join(', ')}</p>}
-			</div>
-			<Arrow />
-		</button>
-	)
-}
-
-
-const DeepClaim = ({ title, description, onClick }: IData) => {
-    return (
-        <div className={css.subCat}> 
-            <button className={css.claim} onClick={onClick}>
-                <div className={css.claimInfo}>
-                    <h2>{title}</h2>
-                    {description && <p>{description}</p>}
-                </div>
-                <Glyph />
-            </button>
-        </div>
-    )
-}
 
 const Claims = () => {
 	const { data, query, keywords, setQuery } = useContext<IAppState>(DataContext)

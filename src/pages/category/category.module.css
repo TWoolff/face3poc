@@ -1,0 +1,40 @@
+@import '../../components/claims/claims.module.css';
+
+.category {
+    display: flex;
+    flex-direction: column;
+
+    .claim {
+        @extend .claim; 
+        padding-top: 1.5rem;  
+        padding-bottom: 1.5rem;
+    }  
+}
+
+.subcat {
+    border-radius: 0;
+    margin-bottom: 3px;
+    width: 100%; 
+    padding-top: 1rem; 
+    padding-bottom: 1rem;
+    
+    .claimInfo {
+        max-width: 16rem;
+    }
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-white);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    
+    & a {
+        color: var(--color-indigo);
+    }
+}

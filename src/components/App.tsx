@@ -1,9 +1,9 @@
 import { createContext, useEffect, useState } from 'react'
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import { Header } from './header/header'
-import { Home } from '../pages/home'
-import { Category } from '../pages/category'
-import { Form } from '../pages/form'
+import { Home } from '../pages/home/home'
+import { Category } from '../pages/category/category'
+import { Form } from '../pages/form/form'
 
 interface IData {
 	id: number

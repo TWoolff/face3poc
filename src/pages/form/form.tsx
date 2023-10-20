@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom'
-import { Hero } from '../components/hero/hero'
+import { Hero } from '../../components/hero/hero'
 import css from './form.module.css'
 
 const Form = () => {

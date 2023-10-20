@@ -3,21 +3,21 @@ import { DataContext, IAppState } from '../App'
 import css from './input.module.css'
 
 interface InputProps {
-	onClick?: () => void;
+	onClick?: () => void
   }
 
 const Input = ({ onClick }: InputProps) => {
 	const { setQuery } = useContext<IAppState>(DataContext)
 	const [placeholder, setPlaceholder] = useState('Beskriv skaden med få ord')
-	const inputRef = useRef<HTMLInputElement>(null);
+	const inputRef = useRef<HTMLInputElement>(null)
+	const handleFocus = () => {setPlaceholder('')}
 
 	useEffect(() => {
 		if (inputRef.current) {
-		inputRef.current.focus();
+		inputRef.current.focus()
 		}
-	}, []);
+	}, [])
 	
-	const handleFocus = () => {setPlaceholder('')}
 
 	return (
 		<div className={css.inputField}>
