@@ -36,13 +36,16 @@ const Claims = () => {
 				const filteredSubcats = item.subcat?.filter((subcat) =>
 				words.every((word) => subcat.keywords?.some((keyword) => keyword.toLowerCase().includes(word))
 			))
+			// @ts-ignore
 				if (filteredSubcats?.length) {matchingSubcats.push(...filteredSubcats)}
 			})
 
+			// @ts-ignore
 			setFilteredData(matchingSubcats)
 			setFilteredWords(words)
 		} else {
 			const allSubcats = data.flatMap((item) => item.subcat)
+			// @ts-ignore
 			setFilteredData(allSubcats)
 			setFilteredWords([])
 		}
@@ -63,6 +66,7 @@ const Claims = () => {
 		{dataToDisplay.map(({ id, title, description, cat, subcat, group }: IData) => (
 			<Fragment key={id}>
 				{filteredData.length === 1 ? (
+					// @ts-ignore
 					<DeepClaim  onClick={() => handleClaimClick(filteredData[0])} id={id} group={group} title={title} description={description} keywords={[]} />
 				) : (
 					<Claim {...{id, title, cat, subcat, query, keywords, description, group}}
