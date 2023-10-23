@@ -1,4 +1,4 @@
-import { Fragment, createContext, useEffect, useState } from 'react'
+import { createContext, useEffect, useState } from 'react'
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import { Header } from './header/header'
 import { Home } from '../pages/home/home'
