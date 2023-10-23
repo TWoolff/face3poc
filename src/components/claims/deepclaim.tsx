@@ -3,6 +3,7 @@ import Glyph from '../../assets/images/Glyph.svg?react'
 import css from './claims.module.css'
 
 const DeepClaim = ({ title, description, onClick }: IData) => {
+
     return (
         <div className={css.subCat}> 
             <button className={css.claim} onClick={onClick}>
