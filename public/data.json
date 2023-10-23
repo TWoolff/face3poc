@@ -808,7 +808,8 @@
             "brand",
             "brændte",
             "juledekoration",
-            "kogeplade"
+            "kogeplade",
+            "komfur"
         ],
         "subcat": [
             {
@@ -938,7 +939,8 @@
                     "skade",
                     "bygning",
                     "ting",
-                    "kogeplade"
+                    "kogeplade",
+                    "komfur"
                 ],
                 "subcat": [],
                 "form": "pamithusogevttingmitprivat"
