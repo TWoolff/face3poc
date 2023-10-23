@@ -97,7 +97,6 @@
                     "forrude",
                     "rude",
                     "knust",
-                    "sidespejl",
                     "bil",
                     "campingvogn",
                     "mortorcykel",
@@ -121,6 +120,7 @@
                     "parkeret",
                     "parkerer",
                     "holdt",
+                    "sidespejl",
                     "bil",
                     "holdt",
                     "stille",
@@ -762,14 +762,66 @@
         "title": "Bygning",
         "description": "Skade på hus, tag eller bygning",
         "form": null,
-        "keywords": [],
+        "keywords": [
+            "indbrud",
+            "brækket",
+            "glas",
+            "rude",
+            "tag",
+            "hegn",
+            "drivhus",
+            "carport",
+            "vindue",
+            "haveskur",
+            "flagstang",
+            "terrasse",
+            "rør",
+            "sprunget",
+            "sprængte",
+            "sprængt",
+            "vand",
+            "kloak",
+            "rotte",
+            "rotter",
+            "skadedyr",
+            "hus",
+            "kælder",
+            "badeværelse",
+            "toilet",
+            "håndvask",
+            "råd",
+            "svamp",
+            "fugt",
+            "skimmelsvamp",
+            "skade",
+            "mur",
+            "træ",
+            "træværk",
+            "storm",
+            "stybrud",
+            "vejr",
+            "ejer",
+            "ejerskifte",
+            "bygning",
+            "ild",
+            "brændt",
+            "brand",
+            "brændte",
+            "juledekoration",
+            "kogeplade"
+        ],
         "subcat": [
             {
                 "id": 40,
                 "cat": "Bygning",
                 "title": "Døre og vinduer",
                 "description": "Døre og vinduer",
-                "keywords": [],
+                "keywords": [
+                    "indbrud",
+                    "brækket",
+                    "glas",
+                    "rude"
+                ],
                 "subcat": [],
                 "form": "doreogvinduermitprivat"
             },
@@ -778,7 +830,16 @@
                 "cat": "Bygning",
                 "title": "Bygning (fx tag, hegn, drivhus)",
                 "description": "Bygning (fx tag, hegn, drivhus)",
-                "keywords": [],
+                "keywords": [
+                    "tag",
+                    "hegn",
+                    "drivhus",
+                    "carport",
+                    "vindue",
+                    "haveskur",
+                    "flagstang",
+                    "terrasse"
+                ],
                 "subcat": [],
                 "form": "dinbygningmitprivat"
             },
@@ -787,7 +848,20 @@
                 "cat": "Bygning",
                 "title": "Rørskade",
                 "description": "Rørskade",
-                "keywords": [],
+                "keywords": [
+                    "rør",
+                    "sprunget",
+                    "sprængte",
+                    "sprængt",
+                    "vand",
+                    "kloak",
+                    "rotte",
+                    "rotter",
+                    "skadedyr",
+                    "hus",
+                    "kælder",
+                    "badeværelse"
+                ],
                 "subcat": [],
                 "form": "rorskaderidithjemmitprivat"
             },
@@ -796,7 +870,14 @@
                 "cat": "Bygning",
                 "title": "Brud på glas, WC eller vask",
                 "description": "Brud på glas, WC eller vask",
-                "keywords": [],
+                "keywords": [
+                    "glas",
+                    "wc",
+                    "toilet",
+                    "vask",
+                    "håndvask",
+                    "badeværelse"
+                ],
                 "subcat": [],
                 "form": "dinbygningmitprivat"
             },
@@ -805,7 +886,14 @@
                 "cat": "Bygning",
                 "title": "Råd og svamp",
                 "description": "Råd og svamp",
-                "keywords": [],
+                "keywords": [
+                    "råd",
+                    "svamp",
+                    "fugt",
+                    "skimmelsvamp",
+                    "skade",
+                    "vand"
+                ],
                 "subcat": [],
                 "form": "radogsvampmitprivat"
             },
@@ -814,7 +902,13 @@
                 "cat": "Bygning",
                 "title": "Insekt",
                 "description": "Insekt",
-                "keywords": [],
+                "keywords": [
+                    "mur",
+                    "træ",
+                    "træværk",
+                    "hus",
+                    "bygning"
+                ],
                 "subcat": [],
                 "form": "insektmitprivat"
             },
@@ -823,7 +917,14 @@
                 "cat": "Bygning",
                 "title": "Vejrskade",
                 "description": "Vejrskade",
-                "keywords": [],
+                "keywords": [
+                    "kælder",
+                    "hus",
+                    "vand",
+                    "storm",
+                    "skybrud",
+                    "vejr"
+                ],
                 "subcat": [],
                 "form": "stormdinbygningmitprivat / skybruddinbygningmitprivat"
             },
@@ -832,7 +933,13 @@
                 "cat": "Bygning",
                 "title": "Anden skade på mit hus og evt. ting",
                 "description": "Anden skade på mit hus og evt. ting",
-                "keywords": [],
+                "keywords": [
+                    "anden",
+                    "skade",
+                    "bygning",
+                    "ting",
+                    "kogeplade"
+                ],
                 "subcat": [],
                 "form": "pamithusogevttingmitprivat"
             },
@@ -841,7 +948,11 @@
                 "cat": "Bygning",
                 "title": "Anden skade på bygning",
                 "description": "Anden skade på bygning",
-                "keywords": [],
+                "keywords": [
+                    "anden",
+                    "skade",
+                    "bygning"
+                ],
                 "subcat": [],
                 "form": "dinbygningmitprivat"
             },
@@ -850,7 +961,12 @@
                 "cat": "Bygning",
                 "title": "Bygning i forbindelse med ejerskifte",
                 "description": "Bygning i forbindelse med ejerskifte",
-                "keywords": [],
+                "keywords": [
+                    "ejer",
+                    "ejerskifte",
+                    "bygning",
+                    "hus"
+                ],
                 "subcat": [],
                 "form": "bygningiforbindelsemedejerskiftemitprivat"
             },
@@ -859,25 +975,27 @@
                 "cat": "Bygning",
                 "title": "Andres bygning",
                 "description": "Andres bygning",
-                "keywords": [],
+                "keywords": [
+                    "bygning",
+                    "hus"
+                ],
                 "subcat": [],
                 "form": "andresbygningansvarmitprivat"
-            },
-            {
-                "id": 51,
-                "cat": "Bygning",
-                "title": "Skader på dør eller vinduer",
-                "description": "Skader på dør eller vinduer",
-                "keywords": [],
-                "subcat": [],
-                "form": "doreogvinduermitprivat"
             },
             {
                 "id": 52,
                 "cat": "Bygning",
                 "title": "Brand",
                 "description": "Brand",
-                "keywords": [],
+                "keywords": [
+                    "ild",
+                    "brand",
+                    "brændt",
+                    "juledekoration",
+                    "brandte",
+                    "hus",
+                    "bygning"
+                ],
                 "subcat": [],
                 "form": "brandmitprivat"
             },
