@@ -51,7 +51,6 @@
             "siden",
             "ting",
             "genstand",
-            "bygning",
             "skilt",
             "dyr",
             "hund",
@@ -150,20 +149,9 @@
                 "form": "koretojstormmitprivat"
             },
             {
-                "id": 497,
-                "cat": "Køretøj - Skade på bil",
-                "group": "Køretøj - Skade på bil",
-                "parent": "Køretøj - Skade på bil",
-                "title": "Påkørsel i trafikken",
-                "description": "Påkørsel i trafikken",
-                "keywords": [],
-                "subcat": [],
-                "form": null
-            },
-            {
                 "id": 5,
                 "cat": "Køretøj - Skade på bil",
-                "group": "Påkørsel i trafikken",
+                "group": "Køretøj - Skade på bil",
                 "parent": "Påkørsel i trafikken",
                 "title": "Jeg er blevet påkørt bagfra",
                 "description": "Jeg er blevet påkørt bagfra",
@@ -186,20 +174,9 @@
                 "form": "blevet-paakoert-bagfra-v2"
             },
             {
-                "id": 172,
-                "cat": "Påkørsel i trafikken",
-                "group": "Påkørsel i trafikken",
-                "parent": "Påkørsel i trafikken",
-                "title": "bagfra",
-                "description": "Skade på bil",
-                "keywords": [],
-                "subcat": [],
-                "form": "blevet-paakoert-bagfra-v2"
-            },
-            {
                 "id": 6,
-                "cat": "Påkørsel i trafikken",
-                "group": "Påkørsel i trafikken",
+                "cat": "Køretøj - Skade på bil",
+                "group": "Køretøj - Skade på bil",
                 "parent": "Påkørsel i trafikken",
                 "title": "Jeg er blevet påkørt frontalt",
                 "description": "Jeg er blevet påkørt frontalt",
@@ -222,8 +199,8 @@
             },
             {
                 "id": 8,
-                "cat": "Påkørsel i trafikken",
-                "group": "Påkørsel i trafikken",
+                "cat": "Køretøj - Skade på bil",
+                "group": "Køretøj - Skade på bil",
                 "title": "Jeg er blevet påkørt fra siden",
                 "description": "Jeg er blevet påkørt fra siden",
                 "keywords": [
@@ -245,7 +222,7 @@
             {
                 "id": 9,
                 "cat": "Påkørsel i trafikken",
-                "group": "Påkørsel i trafikken",
+                "group": "Køretøj - Skade på bil",
                 "title": "Jeg har ramt et køretøj",
                 "description": "Jeg har ramt et køretøj",
                 "keywords": [
@@ -270,14 +247,13 @@
             {
                 "id": 10,
                 "cat": "Påkørsel i trafikken",
-                "group": "Påkørsel i trafikken",
+                "group": "Køretøj - Skade på bil",
                 "title": "Jeg har ramt en ting eller en bygning",
                 "description": "Jeg har ramt en ting eller en bygning",
                 "keywords": [
                     "ramt",
                     "ramte",
                     "ting",
-                    "bygning",
                     "genstand",
                     "skilt",
                     "ridse",
@@ -305,7 +281,7 @@
             {
                 "id": 11,
                 "cat": "Påkørsel i trafikken",
-                "group": "Påkørsel i trafikken",
+                "group": "Køretøj - Skade på bil",
                 "title": "Jeg har ramt et dyr",
                 "description": "Jeg har ramt et dyr",
                 "keywords": [
@@ -332,7 +308,7 @@
             {
                 "id": 12,
                 "cat": "Påkørsel i trafikken",
-                "group": "Påkørsel i trafikken",
+                "group": "Køretøj - Skade på bil",
                 "title": "Jeg har ramt en person",
                 "description": "Jeg har ramt en person",
                 "keywords": [
@@ -861,7 +837,8 @@
                     "skadedyr",
                     "hus",
                     "kælder",
-                    "badeværelse"
+                    "badeværelse",
+                    "bygning"
                 ],
                 "subcat": [],
                 "form": "rorskaderidithjemmitprivat"
