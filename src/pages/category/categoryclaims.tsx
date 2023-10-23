@@ -20,6 +20,17 @@ const ClaimsCat = ({ filteredCatData }: ClaimsCatProps) => {
         setSubItems(subItems)
     }
 
+    // const handleSubItem = (group: string, cat: string) => {
+    //     const subItems = filteredCatData.flatMap((item) =>
+    //         item.subcat?.filter((subItem) => subItem.group === group && subItem.cat !== cat) || []
+    //     )
+    //     const query = { subItems: JSON.stringify(subItems) }
+    //     navigate({
+    //         pathname: '/subcategory',
+    //         search: '?' + new URLSearchParams(query).toString(),
+    //     })
+    // };
+
     const handleDeepClick = (subItem: IData) => {
         const query = { deepestObject: JSON.stringify(subItem) }
         navigate({
@@ -32,7 +43,7 @@ const ClaimsCat = ({ filteredCatData }: ClaimsCatProps) => {
         <>
             {filteredCatData.map((item) => (
                 <section key={item.id} className={css.category}>
-                    <button className={`${css.claim} ${subItems.length === 0 ? css.active : css.active}`} onClick={() => setSubItems([])}>
+                    <button className={`${css.claim} ${subItems.length === 0 ? css.active : ''}`} onClick={() => setSubItems([])}>
                         <div className={css.claimInfo}>
                             <h2>{subItems.length === 0 ? item.title : subItems[0].parent}</h2>
                         </div>
@@ -40,7 +51,7 @@ const ClaimsCat = ({ filteredCatData }: ClaimsCatProps) => {
                     </button>
                     {subItems.length === 0 &&
                         item.subcat?.filter((subItem) => subItem.cat === item.cat).map((subItem) => (
-                            <button className={`${css.claim} ${css.subcat}`} key={subItem.id} onClick={() => handleSubItemClick(subItem.group, subItem.cat)}>
+                            <button className={`${css.claim} ${css.subcat}`} key={subItem.id} onClick={() => (!subItem.form ? handleSubItemClick(subItem.group, subItem.cat) : handleDeepClick(subItem))}>
                                 <div className={css.claimInfo}>
                                     <h2>{subItem.title}</h2>
                                 </div>

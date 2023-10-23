@@ -122,7 +122,7 @@ const Claims = () => {
 	})
 
 	return (
-		<section className={css.claims}>
+		<section className={filteredData.length === 1 ? `${css.claims} ${css.active}` : css.claims}>
 			{filteredData.map(({ id, title, description, cat, subcat, group }: IData) => (
 				<Fragment key={id}>
 					<Claim {...{ id, title, cat, subcat, query, keywords, description, group }} setQuery={setQuery} filteredWords={filteredWords} setFilteredWords={setFilteredWords} className={filteredData.length === 1 ? `${css.claim} ${css.active}` : css.claim} />

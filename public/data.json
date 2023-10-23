@@ -132,7 +132,7 @@
                     "galt"
                 ],
                 "subcat": [],
-                "form": null
+                "form": "/skader/parkeringsskade"
             },
             {
                 "id": 4,
@@ -153,6 +153,7 @@
                 "id": 497,
                 "cat": "Køretøj - Skade på bil",
                 "group": "Køretøj - Skade på bil",
+                "parent": "Køretøj - Skade på bil",
                 "title": "Påkørsel i trafikken",
                 "description": "Påkørsel i trafikken",
                 "keywords": [],
@@ -185,9 +186,21 @@
                 "form": "blevet-paakoert-bagfra-v2"
             },
             {
-                "id": 6,
-                "cat": "Køretøj - Skade på bil",
+                "id": 172,
+                "cat": "Påkørsel i trafikken",
                 "group": "Påkørsel i trafikken",
+                "parent": "Påkørsel i trafikken",
+                "title": "bagfra",
+                "description": "Skade på bil",
+                "keywords": [],
+                "subcat": [],
+                "form": "blevet-paakoert-bagfra-v2"
+            },
+            {
+                "id": 6,
+                "cat": "Påkørsel i trafikken",
+                "group": "Påkørsel i trafikken",
+                "parent": "Påkørsel i trafikken",
                 "title": "Jeg er blevet påkørt frontalt",
                 "description": "Jeg er blevet påkørt frontalt",
                 "keywords": [
@@ -209,7 +222,7 @@
             },
             {
                 "id": 8,
-                "cat": "Køretøj - Skade på bil",
+                "cat": "Påkørsel i trafikken",
                 "group": "Påkørsel i trafikken",
                 "title": "Jeg er blevet påkørt fra siden",
                 "description": "Jeg er blevet påkørt fra siden",
@@ -231,7 +244,7 @@
             },
             {
                 "id": 9,
-                "cat": "Køretøj - Skade på bil",
+                "cat": "Påkørsel i trafikken",
                 "group": "Påkørsel i trafikken",
                 "title": "Jeg har ramt et køretøj",
                 "description": "Jeg har ramt et køretøj",
@@ -256,7 +269,7 @@
             },
             {
                 "id": 10,
-                "cat": "Køretøj - Skade på bil",
+                "cat": "Påkørsel i trafikken",
                 "group": "Påkørsel i trafikken",
                 "title": "Jeg har ramt en ting eller en bygning",
                 "description": "Jeg har ramt en ting eller en bygning",
@@ -291,7 +304,7 @@
             },
             {
                 "id": 11,
-                "cat": "Køretøj - Skade på bil",
+                "cat": "Påkørsel i trafikken",
                 "group": "Påkørsel i trafikken",
                 "title": "Jeg har ramt et dyr",
                 "description": "Jeg har ramt et dyr",
@@ -318,7 +331,7 @@
             },
             {
                 "id": 12,
-                "cat": "Køretøj - Skade på bil",
+                "cat": "Påkørsel i trafikken",
                 "group": "Påkørsel i trafikken",
                 "title": "Jeg har ramt en person",
                 "description": "Jeg har ramt en person",
@@ -489,7 +502,7 @@
                     "tvivl"
                 ],
                 "subcat": [],
-                "form": null
+                "form": "cykel-andet"
             }
         ]
     },
@@ -694,7 +707,7 @@
                 "description": "Ødelagte ting eller elektronik",
                 "keywords": [],
                 "subcat": [],
-                "form": null
+                "form": "/skader/elektronik-forventningsafstemning"
             },
             {
                 "id": 34,
@@ -703,7 +716,7 @@
                 "description": "Ødelagte briller",
                 "keywords": [],
                 "subcat": [],
-                "form": null
+                "form": "skader/formularer/brilleskade"
             },
             {
                 "id": 35,
@@ -712,7 +725,7 @@
                 "description": "Andres ting",
                 "keywords": [],
                 "subcat": [],
-                "form": null
+                "form": "Andres ting/elektronik (ansvar)"
             },
             {
                 "id": 36,
@@ -739,7 +752,7 @@
                 "description": "Andet",
                 "keywords": [],
                 "subcat": [],
-                "form": null
+                "form": "ting-andet"
             }
         ]
     },
@@ -965,7 +978,7 @@
                     "afbestilling"
                 ],
                 "subcat": [],
-                "form": null
+                "form": "Rejse - afbestilling"
             },
             {
                 "id": 59,
@@ -983,7 +996,7 @@
                     "taskerne"
                 ],
                 "subcat": [],
-                "form": null
+                "form": "Rejse - mistet bagage"
             }
         ]
     },
@@ -1033,7 +1046,7 @@
                     "husdyr"
                 ],
                 "subcat": [],
-                "form": null
+                "form": "Dyr-anmelselde"
             },
             {
                 "id": 62,
@@ -1110,7 +1123,7 @@
                     "under"
                 ],
                 "subcat": [],
-                "form": null
+                "form": "https://www.topdanmark.dk/anmeld-skade/besked/arbejdsloeshed-via-loenssikringsside"
             },
             {
                 "id": 66,
@@ -1124,7 +1137,7 @@
                     "over"
                 ],
                 "subcat": [],
-                "form": null
+                "form": "Anmeldelse - over 50.000 kr"
             },
             {
                 "id": 67,
@@ -1136,7 +1149,7 @@
                     "retshjælp"
                 ],
                 "subcat": [],
-                "form": null
+                "form": "/skader/for/retshjaelpsagertilogmed50000kr/"
             },
             {
                 "id": 68,
