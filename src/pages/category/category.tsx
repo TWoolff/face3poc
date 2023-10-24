@@ -22,7 +22,6 @@ const Category = () => {
             <Hero title={'Hvad drejer din anmeldelse sig om?'} />
             <Input onClick={() => {window.location.href = '/'}} />
             <ClaimsCat filteredCatData={filteredData} />
-            you are in category
         </>
     )
 }

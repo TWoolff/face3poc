@@ -3,7 +3,6 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import { Header } from './header/header'
 import { Home } from '../pages/home/home'
 import { Category } from '../pages/category/category'
-import { SubCategory } from '../pages/category/subcategory'
 import { Form } from '../pages/form/form'
 
 interface IData {
@@ -69,7 +68,6 @@ const App = () => {
 						<Route path="/" element={<Home />} />
 						<Route path="/form" element={<Form />} />
 						<Route path="/category" element={<Category />} />
-						<Route path="/subcategory" element={<SubCategory />} />
 					</Routes>
 				</main>
 			</BrowserRouter>

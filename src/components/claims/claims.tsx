@@ -63,10 +63,8 @@ const Claims = () => {
 
 	const dataToDisplay = filteredWords.length > 0 ? filteredData : data
 
-	console.log(filteredWords)
-
 	return (
-		<section className={filteredData.length === 1 ? `${css.claims} ${css.active}` : css.claims}>
+		<section className={css.claims}>
 		{dataToDisplay.map(({ id, title, description, cat, subcat, group }: IData) => (
 			<Fragment key={id}>
 				{filteredData.length === 1 ? (

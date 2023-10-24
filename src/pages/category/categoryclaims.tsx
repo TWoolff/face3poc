@@ -5,9 +5,7 @@ import Arrow from '../../assets/images/Arrow.svg?react'
 import Glyph from '../../assets/images/Glyph.svg?react'
 import css from './category.module.css'
 
-interface ClaimsCatProps {
-    filteredCatData: IData[];
-}
+interface ClaimsCatProps { filteredCatData: IData[] }
 
 const ClaimsCat = ({ filteredCatData }: ClaimsCatProps) => {
     const [subItems, setSubItems] = useState<IData[]>([])
@@ -20,30 +18,26 @@ const ClaimsCat = ({ filteredCatData }: ClaimsCatProps) => {
         setSubItems(subItems)
     }
 
-    // const handleSubItem = (group: string, cat: string) => {
-    //     const subItems = filteredCatData.flatMap((item) =>
-    //         item.subcat?.filter((subItem) => subItem.group === group && subItem.cat !== cat) || []
-    //     )
-    //     const query = { subItems: JSON.stringify(subItems) }
-    //     navigate({
-    //         pathname: '/subcategory',
-    //         search: '?' + new URLSearchParams(query).toString(),
-    //     })
-    // };
-
     const handleDeepClick = (subItem: IData) => {
-        const query = { deepestObject: JSON.stringify(subItem) }
+        const query = { subcat: JSON.stringify(subItem) }
         navigate({
             pathname: '/form',
             search: '?' + new URLSearchParams(query).toString(),
         })
     }
 
+    const handleBackClick = () => { 
+        window.location.href = '/'
+    }
+
+
+
+
     return (
         <>
             {filteredCatData.map((item) => (
                 <section key={item.id} className={css.category}>
-                    <button className={`${css.claim} ${subItems.length === 0 ? css.active : ''}`} onClick={() => setSubItems([])}>
+                    <button className={`${css.claim} ${subItems.length === 0 ? css.active : ''}`} onClick={() => handleBackClick()}>
                         <div className={css.claimInfo}>
                             <h2>{subItems.length === 0 ? item.title : subItems[0].parent}</h2>
                         </div>
