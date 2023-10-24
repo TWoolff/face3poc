@@ -39,13 +39,13 @@ const Claims = () => {
 				filteredData: [...matchingSubcatsSet],
 				filteredWords: matchingKeywords,
 			}
-			}
-			
-			return {
-				filteredData: data.flatMap((item) => item.subcat || []),
-				filteredWords: [],
-			}
 		}
+			
+		return {
+			filteredData: data.flatMap((item) => item.subcat || []),
+			filteredWords: [],
+		}
+	}
 
 	useEffect(() => {
 		const { filteredData, filteredWords } = filterDataByKeywords()
