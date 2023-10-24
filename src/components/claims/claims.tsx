@@ -6,7 +6,7 @@ import { DeepClaim } from './deepclaim'
 import css from './claims.module.css'
 
 const Claims = () => {
-	const { data, query, keywords, setQuery } = useContext<IAppState>(DataContext)
+	const { data, query, keywords } = useContext<IAppState>(DataContext)
 	const [filteredWords, setFilteredWords] = useState<string[]>([])
 	const [filteredData, setFilteredData] = useState<IData[]>(data || [])
 	
@@ -68,9 +68,9 @@ const Claims = () => {
 		{dataToDisplay.map(({ id, title, description, cat, subcat, group }: IData) => (
 			<Fragment key={id}>
 				{filteredData.length === 1 ? (
-					<DeepClaim onClick={() => handleClaimClick(filteredData[0] as unknown as IData['subcat'])} {...{id, cat, title, description, keywords, group}}  />
+					<DeepClaim {...{id, cat, title, description, keywords, group}}  onClick={() => handleClaimClick(filteredData[0] as unknown as IData['subcat'])} />
 				) : (
-					<Claim {...{id, title, cat, subcat, query, keywords, description, group, setQuery, filteredWords, setFilteredWords}} onClick={() => handleClaimClick(subcat)} className={filteredWords.length > 0 ? `${css.claim} ${css.subCat}` : css.claim} />
+					<Claim {...{id, title, cat, description, group, filteredWords, keywords}} onClick={() => handleClaimClick(subcat)} className={filteredWords.length > 0 ? `${css.claim} ${css.subCat}` : css.claim} />
 				)}
 			</Fragment>
 		))}

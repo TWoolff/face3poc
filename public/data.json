@@ -450,7 +450,8 @@
                     "ting",
                     "genstand",
                     "ødelagt",
-                    "stykker"
+                    "stykker",
+                    "cykel"
                 ],
                 "subcat": [],
                 "form": "skade-pa-ting-eller-cykel"
@@ -464,7 +465,8 @@
                     "tyveri",
                     "stjålet",
                     "taget",
-                    "væk"
+                    "væk",
+                    "cykel"
                 ],
                 "subcat": [],
                 "form": "cykeltyverimitprivat"
@@ -476,7 +478,8 @@
                 "description": "Andet",
                 "keywords": [
                     "andet",
-                    "tvivl"
+                    "tvivl",
+                    "cykel"
                 ],
                 "subcat": [],
                 "form": "cykel-andet"

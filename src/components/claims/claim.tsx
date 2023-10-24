@@ -12,14 +12,14 @@ const Claim = ({ id, title, description, className, cat, filteredWords }: IData)
 			cat,
 			title,
 			description,
-			filteredWords: filteredWords.join(',')
+			filteredWords
 		};
 		navigate({
 			pathname: '/category',
 			search: '?' + new URLSearchParams(query).toString(),
 		})
 	}
-	
+
 	return (
 		<button className={className} onClick={handleClick}>
 			<div className={css.claimInfo}>

@@ -12,7 +12,7 @@ const Category = () => {
 
     useEffect(() => {
         const searchParams = new URLSearchParams(location.search)
-        const cat = searchParams.get("cat")
+        const cat = searchParams.get('cat')
         const filteredData = data.filter((item) => item.cat === cat)
         setFilteredData(filteredData)
     }, [data, location.search])
