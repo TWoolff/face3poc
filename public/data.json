@@ -1011,7 +1011,7 @@
         "id": 55,
         "cat": "Rejse",
         "title": "Rejse",
-        "description": "Sygdom/skade på rejsen, afbestilt rejse, forsinket/mistet baggage",
+        "description": "Sygdom på rejsen, afbestilling, mistet baggage",
         "form": null,
         "keywords": [
             "rejse",

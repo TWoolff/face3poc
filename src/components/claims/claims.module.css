@@ -86,6 +86,7 @@
 .subCat {
     display: flex;
     margin-bottom: 0.5rem;
+    max-width: 46rem;
 
     @media (min-width: 768px) {
         margin-bottom: 0;
