@@ -30,7 +30,8 @@ const Claims = () => {
 			return queryWords.includes(keyword.toLowerCase())
 		})
 	
-		if (matchingKeywords.length >= 1) {
+		if (matchingKeywords.length > 0) {
+			/*@ts-ignore*/
 			const matchingSubcatsSet = new Set<IData['subcat'][0]>()
 
 			data.forEach((item) => {
