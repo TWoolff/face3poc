@@ -558,7 +558,11 @@
             "anden",
             "motorcykel",
             "slag",
-            "slået"
+            "slået",
+            "rejse",
+            "ferie",
+            "ferien",
+            "rejsen"
         ],
         "subcat": [
             {
@@ -744,6 +748,7 @@
                     "fald",
                     "vrid",
                     "vredet",
+                    "vred",
                     "nerve",
                     "brækket",
                     "arm",
@@ -763,7 +768,11 @@
                     "ryggen",
                     "hoved",
                     "hovedet",
-                    "syg"
+                    "syg",
+                    "rejse",
+                    "ferie",
+                    "ferien",
+                    "rejsen"
                 ],
                 "subcat": [],
                 "form": "uheldigparejsenmitprivat"
@@ -784,6 +793,7 @@
                     "fald",
                     "vrid",
                     "vredet",
+                    "vred",
                     "nerve",
                     "brækket",
                     "arm",
