@@ -1,19 +1,22 @@
 .inputField {
 	display: flex;
 	justify-content: center;
+	margin: 2rem;
 
-	input[type="text"] {
-		margin: 2rem 0;
+	& input[type="text"] {
 		padding: 1rem;
-		width: 100%;
+		width: 23rem;		
 		border-radius: 1rem;
 		border: 1px dashed var(--color-grey-200);
 		font-size: 16px;
 		color: var(--color-indigo);
+	}
 
-		@media (min-width: 768px) {
-			width: 50%;
-			
-		}
+	& p {
+		width: fit-content;
+		font-size: 0.875rem;
+		color: var(--color-purple);
+		line-height: 1.1;
+		margin: 1rem auto;
 	}
 }
