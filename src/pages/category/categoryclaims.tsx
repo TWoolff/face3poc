@@ -26,9 +26,7 @@ const ClaimsCat = ({ filteredCatData }: ClaimsCatProps) => {
         })
     }
 
-    const handleBackClick = () => { 
-        window.location.href = '/'
-    }
+    const handleBackClick = () => { window.location.href = '/' }
 
     return (
         <>

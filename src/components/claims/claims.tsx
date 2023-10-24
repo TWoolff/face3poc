@@ -68,7 +68,7 @@ const Claims = () => {
 		{dataToDisplay.map(({ id, title, description, cat, subcat, group }: IData) => (
 			<Fragment key={id}>
 				{filteredData.length === 1 ? (
-					<DeepClaim onClick={() => handleClaimClick(filteredData[0] as unknown as IData['subcat'])} id={id} cat={cat} title={title} description={description} keywords={[]} group={''} />
+					<DeepClaim onClick={() => handleClaimClick(filteredData[0] as unknown as IData['subcat'])} {...{id, cat, title, description, keywords, group}}  />
 				) : (
 					<Claim {...{id, title, cat, subcat, query, keywords, description, group, setQuery, filteredWords, setFilteredWords}} onClick={() => handleClaimClick(subcat)} className={filteredWords.length > 0 ? `${css.claim} ${css.subCat}` : css.claim} />
 				)}
