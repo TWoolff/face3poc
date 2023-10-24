@@ -12,7 +12,7 @@ interface IData {
 	title: string
 	description: string
 	keywords: string[]
-	subcat?: (IData & { subcat?: IData[] })[]
+	subcat?: IData[]
 	[key: string]: any
 }
 

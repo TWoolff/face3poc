@@ -30,9 +30,6 @@ const ClaimsCat = ({ filteredCatData }: ClaimsCatProps) => {
         window.location.href = '/'
     }
 
-
-
-
     return (
         <>
             {filteredCatData.map((item) => (

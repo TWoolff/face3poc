@@ -9,27 +9,19 @@ const Claims = () => {
 	const { data, query, keywords, setQuery } = useContext<IAppState>(DataContext)
 	const [filteredWords, setFilteredWords] = useState<string[]>([])
 	const [filteredData, setFilteredData] = useState<IData[]>(data || [])
-
+	
 	const navigate = useNavigate()
 
-	useEffect(() => {
+	const filterDataByKeywords = () => {
 		const queryWords = query.toLowerCase().split(' ')
-	
+
 		const allKeywords = data.flatMap(item => {
 			const topLevelKeywords = item.keywords || []
-			
-			if (!item.subcat) {
-				return topLevelKeywords
-			}
-			
-			const subcatKeywords = item.subcat.flatMap(sub => sub.keywords || [])
-			return [...topLevelKeywords, ...subcatKeywords]
-		})		
-	
-		const matchingKeywords = allKeywords.filter(keyword => {
-			return queryWords.includes(keyword.toLowerCase())
+			return item.subcat ? [...topLevelKeywords, ...item.subcat.flatMap(sub => sub.keywords || [])] : topLevelKeywords
 		})
-	
+
+		const matchingKeywords = allKeywords.filter(keyword => queryWords.includes(keyword.toLowerCase()))
+		
 		if (matchingKeywords.length > 0) {
 			/*@ts-ignore*/
 			const matchingSubcatsSet = new Set<IData['subcat'][0]>()
@@ -42,22 +34,30 @@ const Claims = () => {
 					}
 				})
 			})
-	
-			setFilteredData([...matchingSubcatsSet])
-			setFilteredWords(matchingKeywords)
-		} else {
-			const allSubcats = data.flatMap((item) => item.subcat || [])
-			setFilteredData(allSubcats)
-			setFilteredWords([])
+		
+			return {
+				filteredData: [...matchingSubcatsSet],
+				filteredWords: matchingKeywords,
+			}
+			}
+			
+			return {
+				filteredData: data.flatMap((item) => item.subcat || []),
+				filteredWords: [],
+			}
 		}
+
+	useEffect(() => {
+		const { filteredData, filteredWords } = filterDataByKeywords()
+		setFilteredData(filteredData)
+		setFilteredWords(filteredWords)
 	}, [data, query])
-	
 
 	const handleClaimClick = (subcat: IData['subcat']) => {
 		const query = { subcat: JSON.stringify(subcat) }
 		navigate({
-			pathname: '/form',
-			search: '?' + new URLSearchParams(query).toString(),
+		pathname: '/form',
+		search: '?' + new URLSearchParams(query).toString(),
 		})
 	}
 
@@ -70,17 +70,10 @@ const Claims = () => {
 				{filteredData.length === 1 ? (
 					<DeepClaim onClick={() => handleClaimClick(filteredData[0] as unknown as IData['subcat'])} id={id} cat={cat} title={title} description={description} keywords={[]} group={''} />
 				) : (
-					<Claim {...{id, title, cat, subcat, query, keywords, description, group}}
-						setQuery={setQuery}
-						filteredWords={filteredWords}
-						setFilteredWords={setFilteredWords}
-						onClick={() => handleClaimClick(subcat)}
-						className={filteredWords.length > 0 ? `${css.claim} ${css.subCat}` : css.claim}
-					/>
+					<Claim {...{id, title, cat, subcat, query, keywords, description, group, setQuery, filteredWords, setFilteredWords}} onClick={() => handleClaimClick(subcat)} className={filteredWords.length > 0 ? `${css.claim} ${css.subCat}` : css.claim} />
 				)}
 			</Fragment>
-			)
-		)}
+		))}
 		</section>
 	)
 }
