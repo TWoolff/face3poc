@@ -26,10 +26,11 @@ body::-webkit-scrollbar{
 }
 
 main {
-	width: 100vw;
+	max-width: 48rem;
 	padding: 1rem;
+	margin: 5rem auto;
 
 	@media (min-width: 1000px) {
-		padding: 1rem 8.5rem;
+		padding: 1rem;
 	}
 }

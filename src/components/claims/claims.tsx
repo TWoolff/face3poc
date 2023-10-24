@@ -63,6 +63,8 @@ const Claims = () => {
 
 	const dataToDisplay = filteredWords.length > 0 ? filteredData : data
 
+	console.log(filteredWords)
+
 	return (
 		<section className={filteredData.length === 1 ? `${css.claims} ${css.active}` : css.claims}>
 		{dataToDisplay.map(({ id, title, description, cat, subcat, group }: IData) => (
@@ -75,7 +77,7 @@ const Claims = () => {
 						filteredWords={filteredWords}
 						setFilteredWords={setFilteredWords}
 						onClick={() => handleClaimClick(subcat)}
-						className={css.claim}
+						className={filteredWords.length > 0 ? `${css.claim} ${css.subCat}` : css.claim}
 					/>
 				)}
 			</Fragment>
