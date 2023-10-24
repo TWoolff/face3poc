@@ -12,7 +12,7 @@ const Input = ({ onClick }: InputProps) => {
 
 	return (
 		<div className={css.inputField}>
-			<input type='text' onChange={(e) => setQuery(e.target.value)} placeholder={placeholder} onFocus={handleFocus} onBlur={handleBlur} onClick={onClick} />
+			<input type='text' onChange={(e) => setQuery(e.target.value)} placeholder={placeholder} onFocus={handleFocus} onBlur={handleBlur} onClick={onClick} className={css.textField}/>
 		</div>
 	)
 }

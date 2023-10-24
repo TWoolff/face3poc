@@ -3,24 +3,24 @@
 	justify-content: center;
 	margin: 2rem;
 
-	& input[type="text"] {
-		padding: 1rem;
-		width: 23rem;		
-		border-radius: 1rem;
-		border: 1px solid var(--color-grey-200);
-		font-size: 16px;
-		color: var(--color-indigo);
-
-		&:focus {
-			border: 1px solid var(--color-indigo);
-		}
-	}
-
 	& p {
 		width: fit-content;
 		font-size: 0.875rem;
 		color: var(--color-purple);
 		line-height: 1.1;
 		margin: 1rem auto;
+	}
+}
+
+.textField {
+	padding: 1rem;
+	width: 23rem;		
+	border-radius: 1rem;
+	border: 1px solid var(--color-grey-200);
+	font-size: 16px;
+	color: var(--color-indigo);
+
+	&:focus {
+		border: 1px solid var(--color-indigo);
 	}
 }
