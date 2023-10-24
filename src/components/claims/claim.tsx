@@ -19,13 +19,12 @@ const Claim = ({ id, title, description, className, cat, filteredWords }: IData)
 			search: '?' + new URLSearchParams(query).toString(),
 		})
 	}
-
+	
 	return (
 		<button className={className} onClick={handleClick}>
 			<div className={css.claimInfo}>
 				<h2>{title}</h2>
-				{description && <p>{description}</p>}
-				{filteredWords.length > 0 && <p className={css.keyWords}>Nøgleord: {filteredWords.join(', ')}</p>}
+				{filteredWords.length === 0 ? <p>{description}</p> : <p>{cat}</p>}
 			</div>
 			<Arrow />
 		</button>

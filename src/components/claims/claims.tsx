@@ -1,61 +1,62 @@
-import { Fragment, useContext, useEffect, useState } from "react"
-import { useNavigate } from "react-router-dom"
-import { DataContext, IAppState, IData } from "../App"
-import { Claim } from "./claim"
-import { DeepClaim } from "./deepclaim"
-import css from "./claims.module.css"
+import { Fragment, useContext, useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { DataContext, IAppState, IData } from '../App'
+import { Claim } from './claim'
+import { DeepClaim } from './deepclaim'
+import css from './claims.module.css'
 
 const Claims = () => {
-	const { data, query, keywords, setQuery } =
-		useContext<IAppState>(DataContext)
+	const { data, query, keywords, setQuery } = useContext<IAppState>(DataContext)
 	const [filteredWords, setFilteredWords] = useState<string[]>([])
-	const [filteredData, setFilteredData] = useState<IData[]>(data)
+	const [filteredData, setFilteredData] = useState<IData[]>(data || [])
+
 	const navigate = useNavigate()
 
 	useEffect(() => {
-		const words = query.toLowerCase().split(" ").filter(Boolean)
-		const filteredWords = words.filter((word) => {
-		return data.some((item) => {
-			return (
-			item.keywords?.some((keyword) => {
-				return keyword.toLowerCase() === word
-			}) ||
-			item.subcat?.some((subcat) => {
-				return subcat.keywords?.some((keyword) => {
-				return keyword.toLowerCase() === word
-				})
-			})
-			)
+		const queryWords = query.toLowerCase().split(' ')
+	
+		const allKeywords = data.flatMap(item => {
+			const topLevelKeywords = item.keywords || []
+			
+			if (!item.subcat) {
+				return topLevelKeywords
+			}
+			
+			const subcatKeywords = item.subcat.flatMap(sub => sub.keywords || [])
+			return [...topLevelKeywords, ...subcatKeywords]
+		})		
+	
+		const matchingKeywords = allKeywords.filter(keyword => {
+			return queryWords.includes(keyword.toLowerCase())
 		})
-	})
-
-		if (query && filteredWords.length >= 1) {
-			const matchingSubcats: IData["subcat"][] = []
+	
+		if (matchingKeywords.length >= 1) {
+			const matchingSubcatsSet = new Set<IData['subcat'][0]>()
 
 			data.forEach((item) => {
-				const filteredSubcats = item.subcat?.filter((subcat) =>
-				words.every((word) => subcat.keywords?.some((keyword) => keyword.toLowerCase().includes(word))
-			))
-			// @ts-ignore
-				if (filteredSubcats?.length) {matchingSubcats.push(...filteredSubcats)}
+				item.subcat?.forEach((subcat) => {
+					if (subcat.keywords && matchingKeywords.every(keyword => 
+						subcat.keywords.some(k => k.toLowerCase() === keyword.toLowerCase()))) {
+						matchingSubcatsSet.add(subcat)
+					}
+				})
 			})
-
-			// @ts-ignore
-			setFilteredData(matchingSubcats)
-			setFilteredWords(words)
+	
+			setFilteredData([...matchingSubcatsSet])
+			setFilteredWords(matchingKeywords)
 		} else {
-			const allSubcats = data.flatMap((item) => item.subcat)
-			// @ts-ignore
+			const allSubcats = data.flatMap((item) => item.subcat || [])
 			setFilteredData(allSubcats)
 			setFilteredWords([])
 		}
-	}, [data, query, keywords])
+	}, [data, query])
+	
 
-	const handleClaimClick = (subcat: IData["subcat"]) => {
+	const handleClaimClick = (subcat: IData['subcat']) => {
 		const query = { subcat: JSON.stringify(subcat) }
 		navigate({
-			pathname: "/form",
-			search: "?" + new URLSearchParams(query).toString(),
+			pathname: '/form',
+			search: '?' + new URLSearchParams(query).toString(),
 		})
 	}
 
@@ -66,8 +67,7 @@ const Claims = () => {
 		{dataToDisplay.map(({ id, title, description, cat, subcat, group }: IData) => (
 			<Fragment key={id}>
 				{filteredData.length === 1 ? (
-					// @ts-ignore
-					<DeepClaim  onClick={() => handleClaimClick(filteredData[0])} id={id} group={group} title={title} description={description} keywords={[]} />
+					<DeepClaim onClick={() => handleClaimClick(filteredData[0] as unknown as IData['subcat'])} id={id} cat={cat} title={title} description={description} keywords={[]} group={''} />
 				) : (
 					<Claim {...{id, title, cat, subcat, query, keywords, description, group}}
 						setQuery={setQuery}
