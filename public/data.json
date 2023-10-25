@@ -551,6 +551,9 @@
             "fysioterapeut",
             "fysioterapi",
             "genoptræning",
+            "genoptræne",
+            "træne",
+            "træning",
             "tand",
             "tænder",
             "visdomstand",
@@ -614,7 +617,10 @@
                     "hoved",
                     "hovedet",
                     "syg",
-                    "genoptræning"
+                    "genoptræning",
+                    "genoptræne",
+                    "træne",
+                    "træning"
                 ],
                 "subcat": [],
                 "form": "personskademitprivat"
@@ -731,7 +737,10 @@
                     "brug",
                     "fysioterapeut",
                     "fysioterapi",
-                    "genoptræning"
+                    "genoptræning",
+                    "genoptræne",
+                    "træne",
+                    "træning"
                 ],
                 "subcat": [],
                 "form": "brug-for-behandling-boern-mit-privat"
@@ -777,7 +786,10 @@
                     "ferie",
                     "ferien",
                     "rejsen",
-                    "genoptræning"
+                    "genoptræning",
+                    "genoptræne",
+                    "træne",
+                    "træning"
                 ],
                 "subcat": [],
                 "form": "uheldigparejsenmitprivat"
@@ -792,6 +804,9 @@
                     "køre",
                     "kørt",
                     "genoptræning",
+                    "genoptræne",
+                    "træne",
+                    "træning",
                     "galt",
                     "skade",
                     "faldet",
