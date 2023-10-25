@@ -613,7 +613,8 @@
                     "ryggen",
                     "hoved",
                     "hovedet",
-                    "syg"
+                    "syg",
+                    "genoptræning"
                 ],
                 "subcat": [],
                 "form": "personskademitprivat"
@@ -775,7 +776,8 @@
                     "rejse",
                     "ferie",
                     "ferien",
-                    "rejsen"
+                    "rejsen",
+                    "genoptræning"
                 ],
                 "subcat": [],
                 "form": "uheldigparejsenmitprivat"
@@ -789,6 +791,7 @@
                     "bil",
                     "køre",
                     "kørt",
+                    "genoptræning",
                     "galt",
                     "skade",
                     "faldet",
