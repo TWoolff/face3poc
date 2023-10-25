@@ -568,7 +568,8 @@
             "rejse",
             "ferie",
             "ferien",
-            "rejsen"
+            "rejsen",
+            "fod"
         ],
         "subcat": [
             {
@@ -620,7 +621,8 @@
                     "genoptræning",
                     "genoptræne",
                     "træne",
-                    "træning"
+                    "træning",
+                    "fod"
                 ],
                 "subcat": [],
                 "form": "personskademitprivat"
@@ -759,9 +761,6 @@
                     "faldet",
                     "faldt",
                     "fald",
-                    "vrid",
-                    "vredet",
-                    "vred",
                     "nerve",
                     "brækket",
                     "arm",
@@ -785,11 +784,7 @@
                     "rejse",
                     "ferie",
                     "ferien",
-                    "rejsen",
-                    "genoptræning",
-                    "genoptræne",
-                    "træne",
-                    "træning"
+                    "rejsen"
                 ],
                 "subcat": [],
                 "form": "uheldigparejsenmitprivat"
@@ -803,18 +798,11 @@
                     "bil",
                     "køre",
                     "kørt",
-                    "genoptræning",
-                    "genoptræne",
-                    "træne",
-                    "træning",
                     "galt",
                     "skade",
                     "faldet",
                     "faldt",
                     "fald",
-                    "vrid",
-                    "vredet",
-                    "vred",
                     "nerve",
                     "brækket",
                     "arm",
