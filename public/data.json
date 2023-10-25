@@ -1038,7 +1038,15 @@
                     "vask",
                     "håndvask",
                     "badeværelse",
-                    "bygning"
+                    "bygning",
+                    "anden",
+                    "skade",
+                    "bygning",
+                    "ting",
+                    "stykker",
+                    "kogeplade",
+                    "komfur",
+                    "ødelagt"
                 ],
                 "subcat": [],
                 "form": "dinbygningmitprivat"
@@ -1091,24 +1099,6 @@
                 ],
                 "subcat": [],
                 "form": "stormdinbygningmitprivat / skybruddinbygningmitprivat"
-            },
-            {
-                "id": 47,
-                "cat": "Bygning",
-                "title": "Anden skade på mit hus og evt. ting",
-                "description": "Anden skade på mit hus og evt. ting",
-                "keywords": [
-                    "anden",
-                    "skade",
-                    "bygning",
-                    "ting",
-                    "stykker",
-                    "kogeplade",
-                    "komfur",
-                    "ødelagt"
-                ],
-                "subcat": [],
-                "form": "pamithusogevttingmitprivat"
             },
             {
                 "id": 48,
