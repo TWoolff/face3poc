@@ -17,6 +17,7 @@ const Category = () => {
         setFilteredData(filteredData)
     }, [data, location.search])
 
+
     return (
         <>
             <Hero title={'Hvad drejer din anmeldelse sig om?'} />

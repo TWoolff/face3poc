@@ -1,12 +1,11 @@
-import { Fragment, useContext, useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { DataContext, IAppState, IData } from '../App'
 import { Claim } from './claim'
-import { DeepClaim } from './deepclaim'
 import css from './claims.module.css'
 
 const Claims = () => {
-	const { data, query, keywords } = useContext<IAppState>(DataContext)
+	const { data, query } = useContext<IAppState>(DataContext)
 	const [filteredWords, setFilteredWords] = useState<string[]>([])
 	const [filteredData, setFilteredData] = useState<IData[]>(data || [])
 	
@@ -53,27 +52,29 @@ const Claims = () => {
 		setFilteredWords(filteredWords)
 	}, [data, query])
 
-	const handleClaimClick = (subcat: IData['subcat']) => {
-		const query = { subcat: JSON.stringify(subcat) }
-		navigate({
-		pathname: '/form',
-		search: '?' + new URLSearchParams(query).toString(),
-		})
+	const handleClaimClick = (item: IData) => {
+		const encodedItem = encodeURIComponent(JSON.stringify(item))
+	
+		if (item.form) {
+			navigate({
+				pathname: '/form',
+				search: `?item=${encodedItem}`,
+			});
+		} else {
+			navigate({
+				pathname: '/category',
+				search: `?cat=${item.cat}`,
+			})
+		}
 	}
-
+	
 	const dataToDisplay = filteredWords.length > 0 ? filteredData : data
 
 	return (
 		<section className={css.claims}>
-		{dataToDisplay.map(({ id, title, description, cat, subcat, group }: IData) => (
-			<Fragment key={id}>
-				{filteredData.length === 1 ? (
-					<DeepClaim {...{id, cat, title, description, keywords, group}}  onClick={() => handleClaimClick(filteredData[0] as unknown as IData['subcat'])} />
-				) : (
-					<Claim {...{id, title, cat, description, group, filteredWords, keywords}} onClick={() => handleClaimClick(subcat)} className={filteredWords.length > 0 ? `${css.claim} ${css.subCat}` : css.claim} />
-				)}
-			</Fragment>
-		))}
+			{dataToDisplay.map((item: IData) => (
+				<Claim {...item} filteredWords={filteredWords} onClick={() => handleClaimClick(item)} className={filteredWords.length > 0 ? `${css.claim} ${css.subCat}` : css.claim} key={item.id} />
+			))}
 		</section>
 	)
 }

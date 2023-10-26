@@ -742,7 +742,9 @@
                     "genoptræning",
                     "genoptræne",
                     "træne",
-                    "træning"
+                    "træning",
+                    "fod",
+                    "vred"
                 ],
                 "subcat": [],
                 "form": "brug-for-behandling-boern-mit-privat"
@@ -784,7 +786,14 @@
                     "rejse",
                     "ferie",
                     "ferien",
-                    "rejsen"
+                    "rejsen",
+                    "genoptræning",
+                    "genoptræne",
+                    "træne",
+                    "træning",
+                    "fod",
+                    "vred",
+                    "vredet"
                 ],
                 "subcat": [],
                 "form": "uheldigparejsenmitprivat"
@@ -825,7 +834,14 @@
                     "syg",
                     "skitur",
                     "ski",
-                    "pist"
+                    "pist",
+                    "genoptræning",
+                    "genoptræne",
+                    "træne",
+                    "træning",
+                    "fod",
+                    "vred",
+                    "vredet"
                 ],
                 "subcat": [],
                 "form": "uheldigpaskiturenmitprivat"
